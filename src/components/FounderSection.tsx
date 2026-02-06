@@ -152,6 +152,33 @@ const FounderSection = () => {
                                 </Typography>
                             </Box>
 
+                            {/* Core Values */}
+                            <Box sx={{ mb: 3 }}>
+                                <Typography variant="subtitle2" fontWeight={700} color="text.secondary" gutterBottom>
+                                    Seine Werte – unser Fundament:
+                                </Typography>
+                                <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+                                    {['Respekt', 'Freundschaft', 'Einsatzbereitschaft', 'Ehrlichkeit', 'Spaß'].map((value) => (
+                                        <Box
+                                            key={value}
+                                            sx={{
+                                                px: 2,
+                                                py: 0.5,
+                                                bgcolor: 'primary.main',
+                                                color: 'primary.contrastText',
+                                                borderRadius: 2,
+                                                fontWeight: 700,
+                                                fontSize: '0.875rem',
+                                                display: 'inline-block',
+                                                mb: 1
+                                            }}
+                                        >
+                                            {value}
+                                        </Box>
+                                    ))}
+                                </Stack>
+                            </Box>
+
                             {/* The Story Text (Shortened) */}
                             <Typography variant="body1" color="text.secondary" paragraph>
                                 Was 2023 als Pilotprojekt &quot;JUDO FÜR ALLE&quot; an Kölner Schulen begann, ist heute eine Mission.

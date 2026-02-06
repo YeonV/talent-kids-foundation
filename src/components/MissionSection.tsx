@@ -34,7 +34,7 @@ const MissionSection = ({...props}) => {
       <Container maxWidth="lg">
         
         {/* Section Header */}
-        <Box sx={{ textAlign: 'center', mb: 8, maxWidth: 700, mx: 'auto' }}>
+        <Box sx={{ textAlign: 'center', mb: 8, maxWidth: 800, mx: 'auto' }}>
           <Typography 
             variant="overline" 
             color="primary" 
@@ -45,8 +45,14 @@ const MissionSection = ({...props}) => {
           >
             UNSERE MISSION
           </Typography>
-          <Typography variant="h2" gutterBottom sx={{ mb: 3 }}>
+          <Typography variant="h2" gutterBottom sx={{ mb: 2 }}>
+            Wir machen den ersten Schritt zusammen.
+          </Typography>
+          <Typography variant="h5" color="text.secondary" sx={{ mb: 3, fontWeight: 500 }}>
             Mehr als nur Bewegung.
+          </Typography>
+          <Typography variant="body1" color="text.secondary" fontSize="1.1rem" sx={{ mb: 2 }}>
+            Wir glauben, dass jedes Kind das Recht hat, sich zu bewegen, Neues zu probieren und seine Leidenschaft zu finden.
           </Typography>
           <Typography variant="body1" color="text.secondary" fontSize="1.1rem">
             Die Talent Kids Foundation schließt die Lücke zwischen Schulsport und Vereinsleben. 
@@ -114,6 +120,17 @@ const MissionSection = ({...props}) => {
             </Grid>
           ))}
         </Grid>
+
+        {/* Closing Statement */}
+        <Box sx={{ textAlign: 'center', mt: 8, maxWidth: 700, mx: 'auto' }}>
+          <Typography variant="h5" fontWeight={700} gutterBottom sx={{ color: 'primary.main' }}>
+            Unser Ziel:
+          </Typography>
+          <Typography variant="body1" color="text.secondary" fontSize="1.1rem">
+            Kinder sollen Sport nicht nur als immer wiederkehrendes Schulfach kennenlernen, 
+            sondern als möglichen lebensverändernden Moment.
+          </Typography>
+        </Box>
       </Container>
     </Box>
   );

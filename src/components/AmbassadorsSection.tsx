@@ -927,7 +927,7 @@ const AmbassadorsSection = () => {
               Our Ambassadors
             </Typography>
             <Typography variant="h2" fontWeight={800} gutterBottom>
-              Champions für die <Box component="span" sx={{ color: 'primary.main' }}>nächste Generation</Box>
+              Unsere <Box component="span" sx={{ color: 'primary.main' }}>Schrittmacher</Box>
             </Typography>
             <Typography 
               variant="h6" 

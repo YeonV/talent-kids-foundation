@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import MissionSection from '@/components/MissionSection';
 import FounderSection from '@/components/FounderSection';
+import SuccessStorySection from '@/components/SuccessStorySection';
 import ProgramSection from '@/components/ProgramSection';
 import TrainersSection from '@/components/TrainersSection';
 import TeamSection from '@/components/TeamSection';
@@ -29,6 +30,11 @@ export default function Home() {
       {/* Slide von links wirkt dynamisch für Story-Content */}
       <ScrollReveal direction="right" delay={200}>
         <FounderSection />
+      </ScrollReveal>
+
+      {/* Success Story - Anna-Maria Wagner */}
+      <ScrollReveal mode="fade" delay={100}>
+        <SuccessStorySection />
       </ScrollReveal>
       
       <div id="program">

@@ -5,13 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "buildv2": "next build",
+    "prebuildv2": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/(output:\\s*'export',)/,'$1\\n  basePath: \\'/v2\\','); fs.writeFileSync('next.config.ts',cfg);\"",
+    "postbuildv2": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/\\s*basePath:\\s*'\\/v2',\\n?/,''); fs.writeFileSync('next.config.ts',cfg);\"",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/roboto": "^5.2.9",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "@mui/material-nextjs": "^7.3.5",
     "next": "16.0.5",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-icons": "^5.5.0",
+    "zustand": "^5.0.8"
+  },
+  "overrides": {
+    "@mui/material-nextjs": {
+      "next": "16.0.0"
+    }
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -19,6 +35,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
+    "sharp": "^0.34.5",
     "typescript": "^5"
   }
 }

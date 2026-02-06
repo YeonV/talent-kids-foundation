@@ -1,0 +1,357 @@
+[
+  {
+    "id": "stefanie-von-berge",
+    "name": "Stefanie von Berge",
+    "sport": "Boxen",
+    "specialization": "Weltergewicht",
+    "images": [
+      "/img/ambassadors/stefanie-von-berge/1.jpg",
+      "/img/ambassadors/stefanie-von-berge/2.jpg",
+      "/img/ambassadors/stefanie-von-berge/3.jpg",
+      "/img/ambassadors/stefanie-von-berge/4.jpg",
+      "/img/ambassadors/stefanie-von-berge/5.jpg"
+    ],
+    "profession": "Medizinstudentin / Sportsoldatin",
+    "birthDate": "19.03.2001",
+    "city": "Köln",
+    "height": "1.80m",
+    "social": {
+      "instagram": "@steffivonberge"
+    },
+    "achievements": [
+      "Goldmedaille Europameisterschaft",
+      "Goldmedaille U22-Europameisterschaft"
+    ],
+    "bio": "Boxerin im Weltergewicht und Studentin der Medizin, Ihre 1. Medaille mit 16 mit der Silbermedaille bei den U17-EU meisterschaften in Sofia"
+  },
+  {
+    "id": "ramin-tehrani",
+    "name": "Ramin Tehrani",
+    "sport": "Skateboard",
+    "images": [
+      "/img/ambassadors/ramin-tehrani/1.jpg",
+      "/img/ambassadors/ramin-tehrani/2.jpg",
+      "/img/ambassadors/ramin-tehrani/3.jpg",
+      "/img/ambassadors/ramin-tehrani/4.jpg",
+      "/img/ambassadors/ramin-tehrani/5.jpg",
+      "/img/ambassadors/ramin-tehrani/6.jpg"
+    ],
+    "profession": "Trainer mit Skateboardschule in Köln",
+    "city": "Köln + Barcelona",
+    "website": "https://www.skateboardtraining.de/",
+    "achievements": [
+      "2022 Vizemeister NRW Game of Skate"
+    ],
+    "bio": "2004 hat er sein erstes Skateboard in die Hand genommen. Seitdem begleitet ihn dieser Sport überall hin. Während seines Studiums der Sportwissenschaft an der Deutschen Sporthochschule Köln hat er seine Leidenschaft fürs Skaten in Forschungsprojekte und soziale Initiativen eingebracht. In 16 Jahren Contest_Erfahrung hat er zahlreiche Titel geholt, u.a. 2022 Vizemeister NRW Game of Skate. Seine eigene Skateboardschule in Köln, zählt inzwischen über 100 Mitglieder."
+  },
+  {
+    "id": "sarah-voss",
+    "name": "Sarah Voss",
+    "sport": "Kunstturnen",
+    "images": [
+      "/img/ambassadors/sarah-voss/1.jpg"
+    ],
+    "profession": "Betriebswirtschaftslehre Studentin",
+    "birthDate": "21.10.1999",
+    "city": "Dormagen",
+    "height": "1.67m",
+    "social": {
+      "instagram": "@Sarah.vossi"
+    },
+    "beliefs": "Christlich, spirituell",
+    "achievements": [
+      "Europameisterschaft '22 Bronze im Team",
+      "'18,'19,'21 Gold Schwebebalken",
+      "Olympia '24 Paris teilgenommen, 24. Platz",
+      "Sommer 2025 in Sportrente"
+    ],
+    "bio": "Botschafterin der Mitmach-Initiative 'Kinder stark machen' der Bundeszentrale für gesundheitliche Aufklärung (BZgA), erhielt 2021 den Fair Play Preis des Deutschen Sports für 'Zeichen gegen die Sexualisierung im Sport'"
+  },
+  {
+    "id": "lenni-stroehl",
+    "name": "Lenni Ströhl",
+    "sport": "Padel",
+    "images": [
+      "/img/ambassadors/lenni-stroehl/1.jpg",
+      "/img/ambassadors/lenni-stroehl/2.jpg"
+    ],
+    "profession": "Schüler",
+    "age": "ca. 14 Jahre",
+    "achievements": [
+      "Nachwuchs #1",
+      "1st Gen Padel in Deutschland",
+      "Teilnahme Junioren-WM 2025"
+    ],
+    "bio": "Lenni ist Deutschlands Nachwuchsspieler Nr. 1 und gehört der ersten Generation Padelspieler an. Seine höchste Position in der U14 Padel- Weltrangliste war bisher Platz 24. Sein größter sportlicher Erfolg war sicherlich die Teilnahme an der Junioren Padel-Weltmeisterschaft 2025."
+  },
+  {
+    "id": "anna-maria-wagner",
+    "name": "Anna Maria Wagner",
+    "sport": "Judo",
+    "images": [
+      "/img/ambassadors/anna-maria-wagner/1.jpg",
+      "/img/ambassadors/anna-maria-wagner/2.jpg",
+      "/img/ambassadors/anna-maria-wagner/3.jpg",
+      "/img/ambassadors/anna-maria-wagner/4.jpg",
+      "/img/ambassadors/anna-maria-wagner/5.jpg",
+      "/img/ambassadors/anna-maria-wagner/6.jpg",
+      "/img/ambassadors/anna-maria-wagner/7.jpg",
+      "/img/ambassadors/anna-maria-wagner/8.jpg",
+      "/img/ambassadors/anna-maria-wagner/9.jpg",
+      "/img/ambassadors/anna-maria-wagner/10.jpg",
+      "/img/ambassadors/anna-maria-wagner/11.jpg",
+      "/img/ambassadors/anna-maria-wagner/12.jpg",
+      "/img/ambassadors/anna-maria-wagner/13.jpg"
+    ],
+    "profession": "Sportsoldatin und Studentin Hotel und Tourismusmanagement",
+    "birthDate": "17.05.1996",
+    "city": "Köln",
+    "height": "1.82m",
+    "social": {
+      "instagram": "@anna_ma_wagner"
+    },
+    "partner": "Julian Köster (Handballer)",
+    "achievements": [
+      "2021 + 2024 Weltmeister",
+      "2021 Bronze Olympia Tokio",
+      "Fahnenträger Olympia Paris 2024"
+    ],
+    "status": "Oktober 2025 in Judo-Rente",
+    "bio": "Anna-Maria gewann 2021 und 2024 den Weltmeistertitel und holte Bronze bei den Olympischen Spielen 2021 in Tokio. Ein besonderer Moment war die Aufgabe der Fahnenträgerin bei den Olympischen Spielen 2024 in Paris." 
+  },
+  {
+    "id": "noah-bodelier",
+    "name": "Noah Bodelier",
+    "sport": "Leichtathletik (Para)",
+    "specialization": "Weitsprung, 100m, 200m",
+    "images": [
+      "/img/ambassadors/noah-bodelier/1.jpg",
+      "/img/ambassadors/noah-bodelier/2.jpg",
+      "/img/ambassadors/noah-bodelier/3.jpg"
+    ],
+    "profession": "Jura Student",
+    "birthDate": "29.09.2003",
+    "city": "Köln",
+    "social": {
+      "instagram": "@noah_bod"
+    },
+    "achievements": [
+      "Paralympische Spiele Paris 2024 - 6. Platz Weitsprung",
+      "WM 2024 - 4. Platz Weitsprung"
+    ],
+    "hobbies": [
+      "Kochen"
+    ],
+    "bio": "Noah Bodelier, für den Sport zum Lebensgefühl gehört, ist Para-Leichtathlet. Seine Disziplinen sind Weitsprung, 100 m und 200 m. Bei den Olympischen Spielen in Paris 2024 erreichte er den 6. Platz im Weitsprung. Bei den Junioren-Weltmeisterschaften 2019 wurde er 2. Im Weitsprung und 3. Im 200 m Sprint."
+  },
+  {
+    "id": "martin-becker",
+    "name": "Martin Becker",
+    "sport": "Wasserball",
+    "images": [
+      "/img/ambassadors/martin-becker/1.jpg",
+      "/img/ambassadors/martin-becker/2.jpg",
+      "/img/ambassadors/martin-becker/3.jpg",
+      "/img/ambassadors/martin-becker/4.jpg",
+      "/img/ambassadors/martin-becker/5.jpg",
+      "/img/ambassadors/martin-becker/6.jpg"
+    ],
+    "profession": "Geschäftsführer Sharky Bonn",
+    "birthYear": "1984",
+    "city": "Bonn",
+    "height": "2.04m",
+    "achievements": [
+      "Viele Jahre 1. und 2. Bundesliga für den Verein SV Rhenania Köln"
+    ],
+    "bio": "Martin hat über mehrere Jahre in der 1. und 2. Bundesliga im Wasserball für den Verein SV Rhenania Köln gespielt. Später arbeitete er als Trainer für und beteiligte sich dadurch bereits seit über 20 Jahren in mehreren Schwimmschulen. Mittlerweile ist er Gründer und Geschäftsführer der Sharky Schwimmschule und mehrere feste Standorte in Deutschland."
+  },
+  {
+    "id": "max-kieffer",
+    "name": "Max Kieffer",
+    "nickname": "Kiwi",
+    "sport": "Golf",
+    "images": [
+      "/img/ambassadors/max-kieffer/2.jpg",
+      "/img/ambassadors/max-kieffer/3.jpg",
+      "/img/ambassadors/max-kieffer/4.jpg",
+      "/img/ambassadors/max-kieffer/5.jpg",
+      "/img/ambassadors/max-kieffer/6.jpg",
+      "/img/ambassadors/max-kieffer/1.jpg"
+    ],
+    "profession": "Golfpro",
+    "birthDate": "25.06.1990",
+    "city": "Düsseldorf",
+    "social": {
+      "instagram": "@maxkieffer"
+    },
+    "achievements": [
+      "2022 D+D Real Czech Masters in Prag - Erster Titel auf der DP World Tour"
+    ],
+    "bio": "Spielt seit er 5 ist Golf, mit 15 Jahren wurde er in den deutschen Nationalkader berufen und gehört seitdem zum Elite Team Germany, zahlreiche Titel in seiner Amateurzeit, wie den Deutschen Meisterschaften, dem Sieg bei der St. Andrews Trophy und dem Junior Ryder Cup"
+  },
+  {
+    "id": "philipp-petzschner",
+    "name": "Philipp Petzschner",
+    "sport": "Tennis",
+    "images": [
+      "/img/ambassadors/philipp-petzschner/1.jpg"
+    ],
+    "profession": "Jugend-Bundestrainer beim dt. Tennisbund (DTB) seit 2020",
+    "birthDate": "24.03.1984",
+    "height": "1.84m",
+    "social": {
+      "instagram": "@philipppetzschner"
+    },
+    "family": "3 Kinder",
+    "achievements": [
+      "Doppelwin mit Jürgen Melzer Wimbledon 2010 + US Open 2011",
+      "2 Grand-Slam-Titel",
+      "Einzelweltrangliste #35",
+      "Doppelweltrangliste #9"
+    ],
+    "bio": "Seinen ersten Auftritt bei einem Turnier der ATP World Tour hatte Petzschner im Juli 2003 in Stuttgart. Seine größten Erfolge erreichte er im  Doppel, wo er an der Seite von Jürgen Melzer mit Wimbledon 2010 und den US Open 2011 zwei Grand-Slam-Titel gewann. Seine höchste Position in der Einzel-Weltrangliste war Platz 35. In der Doppel-Weltrangliste schaffte er es mit Platz 9 sogar unter die TOP 10."
+  },
+  {
+    "id": "lukas-schiwy",
+    "name": "Lukas Schiwy",
+    "sport": "Volleyball",
+    "specialization": "Sitzvolleyball (Para)",
+    "images": [
+      "/img/ambassadors/lukas-schiwy/4.jpg",
+      "/img/ambassadors/lukas-schiwy/2.jpg",
+      "/img/ambassadors/lukas-schiwy/3.jpg",
+      "/img/ambassadors/lukas-schiwy/1.jpg"
+    ],
+    "profession": "Unternehmensberater",
+    "birthDate": "21.10.1994",
+    "city": "Grevenbroich",
+    "social": {
+      "instagram": "@lukas_schiwy"
+    },
+    "achievements": [
+      "Paralympics 2024 - 4. Platz",
+      "WM 2022 - 5. Platz",
+      "EM 2025 - 2. Platz"
+    ],
+    "disability": "Dysmelie"
+  },
+  {
+    "id": "matyas-szabo",
+    "name": "Matyas Szabo",
+    "sport": "Fechten",
+    "specialization": "Säbelfechter",
+    "images": [
+      "/img/ambassadors/matyas-szabo/1.jpg",
+      "/img/ambassadors/matyas-szabo/2.jpg",
+      "/img/ambassadors/matyas-szabo/3.jpg",
+      "/img/ambassadors/matyas-szabo/4.jpg",
+      "/img/ambassadors/matyas-szabo/5.jpg"
+    ],
+    "profession": "Berufssoldat, jetzt bei Bayer in Leverkusen, Chemie- und Klimapolitik",
+    "birthDate": "19.09.1991",
+    "birthPlace": "Brasov, Rumänien",
+    "city": "Leverkusen",
+    "height": "1.83m",
+    "social": {
+      "instagram": "@matyasszabo"
+    },
+    "website": "https://www.matyas-szabo.com/",
+    "email": "kontakt@matyas-szabo.com",
+    "achievements": [
+      "Weltmeister und fünffacher deutscher Meister",
+      "Mannschaft Europameister 2019",
+      "Fackelträger Olympia 2016 Rio"
+    ],
+    "bio": "Matyas Szabo ist Weltmeister und fünffacher deutscher Meister. 2019 wurde er mit der Mannschaft in Düsseldorf Europameister. 2016 trug er die Olympischen Fackel durch das Athletendorf in Rio."
+  },
+  {
+    "id": "lea-lin-teutenberg",
+    "name": "Lea Lin Teutenberg",
+    "sport": "Radsport",
+    "specialization": "Straßenrad",
+    "images": [
+      "/img/ambassadors/lea-lin-teutenberg/1.jpg"
+    ],
+    "profession": "Sportsoldatin / Profi Radsportlerin",
+    "birthDate": "02.07.1999",
+    "city": "Mettmann",
+    "height": "1.67m",
+    "social": {
+      "instagram": "@linteutenberg"
+    },
+    "achievements": [
+      "U23 EU Meisterschaften Medaillengewinnerin",
+      "Deutsche Meisterin",
+      "Lotto Ladies",
+      "2024 EU Meisterschaft - Silber"
+    ],
+    "bio": "In der Familie Teutenberg ist nahezu jeder im Radsport fest verankert. So auch die beiden Geschwister Lin und Tim. Lin wurde bereits 2018 Mitglied im damaligen WNT-Rotor Pro Cycling Team, mit dem sie 2024 in die UCI Women’s WorldTour aufstieg. 2024 errang sie bei den Europameisterschaften im Ausscheidungsfahren Silber. Tim ist seit 2011 im Radsport aktiv. 2024 wurde er gemeinsam mit Roger Kluge Weltmeister im Zweier-Mannschaftsfahren."
+  },
+  {
+    "id": "tim-torn-teutenberg",
+    "name": "Tim Torn Teutenberg",
+    "sport": "Bahnradfahren",
+    "specialization": "Bahnrad + Straße",
+    "images": [
+      "/img/ambassadors/tim-torn-teutenberg/1.jpg"
+    ],
+    "profession": "Profi Radsportler",
+    "birthDate": "19.06.2002",
+    "city": "Mettmann",
+    "height": "1.83m",
+    "social": {
+      "instagram": "@Tim_teute"
+    },
+    "achievements": [
+      "Olympia 2024 Teilnehmer",
+      "Weltmeister 2er Mannschaftsfahren"
+    ],
+    "bio": "In der Familie Teutenberg ist nahezu jeder im Radsport fest verankert. So auch die beiden Geschwister Lin und Tim. Lin wurde bereits 2018 Mitglied im damaligen WNT-Rotor Pro Cycling Team, mit dem sie 2024 in die UCI Women’s WorldTour aufstieg. 2024 errang sie bei den Europameisterschaften im Ausscheidungsfahren Silber. Tim ist seit 2011 im Radsport aktiv. 2024 wurde er gemeinsam mit Roger Kluge Weltmeister im Zweier-Mannschaftsfahren."
+  },
+  {
+    "id": "max-weisskirchen",
+    "name": "Max Weisskirchen",
+    "sport": "Badminton",
+    "images": [
+      "/img/ambassadors/max-weisskirchen/1.jpg",
+      "/img/ambassadors/max-weisskirchen/2.jpg",
+      "/img/ambassadors/max-weisskirchen/3.jpg"
+    ],
+    "birthDate": "18.10.1996",
+    "city": "Bonn",
+    "height": "1.87m",
+    "social": {
+      "instagram": "@weisskirchenmax"
+    },
+    "relationship": "August 2024 in Valencia verlobt mit Chiara Sophie",
+    "achievements": [
+      "3 Deutsche Meistertitel"
+    ],
+    "status": "Seit 2024 in Rente",
+    "bio": "Max hat, u.a. mit drei deutschen Meistertiteln, hierzulande über viele Jahre das Geschehen im Herreneinzel geprägt. In der Weltrangliste schaffte er es bis auf Rang 50. Dabei errang er u.a. bei der Jugend-EM 2015 Gold im Mixed und Silber im Herreneinzel und wurde bei der EM 2021 Dritter."
+  },
+  {
+    "id": "tibor-weissenborn",
+    "name": "Tibor Weißenborn",
+    "sport": "Hockey",
+    "images": [
+      "/img/ambassadors/tibor-weissenborn/1.jpg"
+    ],
+    "profession": "Geschäftsführer Finanzen bei einem Immobilien-Projektentwickler + Cheftrainer Rot-weiss",
+    "birthDate": "20.03.1981",
+    "birthPlace": "Berlin",
+    "city": "Köln",
+    "height": "1.75m",
+    "family": "Seit 2009 Frau Kerstin Hoyer (Hockeyspielerin), Mind. 1 Tochter (spielt Hockey), Schildkröte",
+    "hobbies": [
+      "Ski fahren"
+    ],
+    "achievements": [
+      "2008 Olympiasieger",
+      "2x Europameister",
+      "2x Weltmeister"
+    ],
+    "current": "Übernimmt beim KTHC Rot-Weiss in Köln das Team der 1. Damen",
+    "bio": "Tibor ist einer der erfolgreichste Hockeyspieler Deutschalands. Er wurde mit der deutschen Nationalmannschaft je zweimal Welt- und Europameister und 2008 Olympiasieger. Für seine sportlichen Erfolge erhielt er das Silberne Lorbeerblatt."
+  }
+]

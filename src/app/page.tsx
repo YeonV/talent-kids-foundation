@@ -1,66 +1,72 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import MissionSection from '@/components/MissionSection';
+import FounderSection from '@/components/FounderSection';
+import ProgramSection from '@/components/ProgramSection';
+import TrainersSection from '@/components/TrainersSection';
+import TeamSection from '@/components/TeamSection';
+import AmbassadorsSection from '@/components/AmbassadorsSection';
+import NetworkSection from '@/components/NetworkSection';
+import DonationSection from '@/components/DonationSection';
+import Footer from '@/components/Footer';
+import ScrollReveal from '@/components/ScrollReveal'; // Neu importieren
+import ParallaxQuote from '@/components/ParallaxQuote';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main>
+      <Navbar /> 
+      
+      {/* Hero braucht kein ScrollReveal, da es "Above the Fold" ist */}
+      <Hero />
+      
+      <div id="mission">
+        <ScrollReveal direction="up">
+          <MissionSection />
+        </ScrollReveal>
+      </div>
+      
+      {/* Slide von links wirkt dynamisch für Story-Content */}
+      <ScrollReveal direction="right" delay={200}>
+        <FounderSection />
+      </ScrollReveal>
+      
+      <div id="program">
+        <ScrollReveal mode="fade">
+          <ProgramSection />
+        </ScrollReveal>
+      </div>
+      
+      {/* Trainer & Team sollen sanft von unten kommen */}
+      <ScrollReveal direction="up" threshold={0.1}>
+        <TrainersSection />
+      </ScrollReveal>
+      
+      <div id="team">
+        <ScrollReveal mode="fade">
+          <TeamSection />
+        </ScrollReveal>
+      </div>
+      
+      <div id="ambassadors">
+        <AmbassadorsSection />
+      </div>
+      
+      <ScrollReveal mode="fade">
+        <NetworkSection />
+      </ScrollReveal>
+      
+      <ParallaxQuote />
+
+      <div id="donate">
+        {/* Wichtig: Donation Section sollte nicht zu wild animiert sein, 
+            damit der Fokus sofort da ist. Ein sanfter Fade ist gut. */}
+        <ScrollReveal mode="fade" delay={300}>
+          <DonationSection />
+        </ScrollReveal>
+      </div>
+      
+      <Footer />
+    </main>
   );
 }

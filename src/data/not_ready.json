@@ -1,0 +1,36 @@
+[
+  {
+    "id": "nils-politt",
+    "name": "Nils Politt",
+    "sport": "Radsport",
+    "specialization": "Straßenrad",
+    "images": [
+      "/ambassadors/nils-politt/1.jpg"
+    ],
+    "profession": "Profi Radsportler",
+    "birthDate": "06.03.1994",
+    "city": "Hürth",
+    "height": "1.92m",
+    "social": {
+      "instagram": "@nilspolitt"
+    },
+    "family": "Frau Annike, 1 Tochter (*19), 2 Söhne (Luke *21)",
+    "achievements": [
+      "Etappensieg bei der Tour de France 2021",
+      "2018 Paris-Nizza 5. Etappe - 2. Platz"
+    ],
+    "bio": "Nils ist Klassikerspezialist. Seinen größten Erfolg feierte er mit dem Etappensieg bei der Tour de France 2021. Seine Stärken hat er auf hügeligen Etappen von Rundfahren, Eintagesrennen sowie in Zeitfahren. Seinen Durchbruch feierte Nils im Jahr 2018: Auf der fünften Etappe von Paris-Nizza belegte er Platz zwei."
+  },
+  {
+    "id": "marc-elvira",
+    "name": "Marc Elvira",
+    "sport": "",
+    "images": [
+      "/ambassadors/marc-elvira/1.jpg",
+      "/ambassadors/marc-elvira/2.jpg",
+      "/ambassadors/marc-elvira/3.jpg"
+    ],
+    "profession": "",
+    "achievements": []
+  }
+]

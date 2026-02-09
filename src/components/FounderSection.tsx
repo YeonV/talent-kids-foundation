@@ -17,6 +17,7 @@ const FounderSection = () => {
 
     return (
         <Box
+            id="founder"
             component="section"
             sx={{
                 py: { xs: 8, md: 12 },
@@ -34,7 +35,7 @@ const FounderSection = () => {
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Box sx={{ position: 'relative' }}>
                             {/* Decorative Background blob/shape */}
-                            <Box
+                            {/* <Box
                                 sx={{
                                     position: 'absolute',
                                     top: -20,
@@ -47,7 +48,7 @@ const FounderSection = () => {
                                     zIndex: 0,
                                     transform: 'rotate(-5deg)'
                                 }}
-                            />
+                            /> */}
 
                             {/* Main Image Frame */}
                             <Paper
@@ -59,7 +60,7 @@ const FounderSection = () => {
                                     overflow: 'hidden',
                                     transform: 'rotate(-2deg)', // Slight artistic tilt
                                     transition: 'transform 0.5s ease',
-                                    '&:hover': { transform: 'rotate(0deg)' }
+                                    // '&:hover': { transform: 'rotate(0deg)' }
                                 }}
                             >
                                 {/* 
@@ -81,7 +82,7 @@ const FounderSection = () => {
                             </Paper>
 
                             {/* "Olympian" Badge Overlay */}
-                            <Box
+                            {/* <Box
                                 sx={{
                                     position: 'absolute',
                                     bottom: 30,
@@ -101,7 +102,7 @@ const FounderSection = () => {
                                 <Typography variant="caption" color="text.secondary">
                                     Beijing • Judo
                                 </Typography>
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Grid>
 
@@ -153,7 +154,7 @@ const FounderSection = () => {
                             </Box>
 
                             {/* Core Values */}
-                            <Box sx={{ mb: 3 }}>
+                            {/* <Box sx={{ mb: 3 }}>
                                 <Typography variant="subtitle2" fontWeight={700} color="text.secondary" gutterBottom>
                                     Seine Werte – unser Fundament:
                                 </Typography>
@@ -177,15 +178,15 @@ const FounderSection = () => {
                                         </Box>
                                     ))}
                                 </Stack>
-                            </Box>
+                            </Box> */}
 
                             {/* The Story Text (Shortened) */}
-                            <Typography variant="body1" color="text.secondary" paragraph>
+                            {/* <Typography variant="body1" color="text.secondary" paragraph>
                                 Was 2023 als Pilotprojekt &quot;JUDO FÜR ALLE&quot; an Kölner Schulen begann, ist heute eine Mission.
                                 Sport ist für mich mehr als Bewegung – es ist eine Schule für das Leben.
                                 Mit der Talent Kids Foundation geben wir das weiter, was der Sport mir gegeben hat:
                                 Disziplin, Gemeinschaft und den Glauben an die eigene Stärke.
-                            </Typography>
+                            </Typography> */}
 
                             <Box pt={2}>
                                 <Button

@@ -22,6 +22,12 @@ import {
 
 export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
   const mode = useThemeStore((state) => state.mode);
+  const initializeTheme = useThemeStore((state) => state.initializeTheme);
+
+  // Initialize theme based on system preference on mount
+  React.useEffect(() => {
+    initializeTheme();
+  }, [initializeTheme]);
 
   // Mapping-Objekt
   const themeMap: Record<ThemeMode, Theme> = React.useMemo(() => ({

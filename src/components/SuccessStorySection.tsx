@@ -1,7 +1,6 @@
 'use client';
 
-import { Box, Container, Typography, Grid, useTheme, alpha, Chip } from '@mui/material';
-import { FaStar } from 'react-icons/fa';
+import { Box, Container, Typography, Grid, useTheme, alpha } from '@mui/material';
 import { withBasePath } from '@/lib/basePath';
 
 const SuccessStorySection = () => {
@@ -9,6 +8,7 @@ const SuccessStorySection = () => {
 
   return (
     <Box
+      id="success-story"
       component="section"
       sx={{
         py: { xs: 8, md: 12 },
@@ -71,7 +71,7 @@ const SuccessStorySection = () => {
                 Mit dem ersten Schritt.
               </Typography>
 
-              <Box
+              {/* <Box
                 sx={{
                   mt: 4,
                   p: 3,
@@ -86,7 +86,7 @@ const SuccessStorySection = () => {
                 <Typography variant="body1" color="text.secondary">
                   für jedes Kind, in jeder Sportart.
                 </Typography>
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
 
@@ -100,14 +100,14 @@ const SuccessStorySection = () => {
                 boxShadow: theme.shadows[10],
                 transform: 'rotate(2deg)',
                 transition: 'transform 0.5s ease',
-                '&:hover': {
-                  transform: 'rotate(0deg) scale(1.02)'
-                }
+                // '&:hover': {
+                //   transform: 'rotate(0deg) scale(1.02)'
+                // }
               }}
             >
               <Box
                 component="img"
-                src={withBasePath("img/ambassadors/anna-maria-wagner/13.jpg")}
+                src={withBasePath("/img/ambassadors/anna-maria-wagner/13.jpg")}
                 alt="Anna-Maria Wagner - Success Story"
                 sx={{
                   width: '100%',
@@ -118,7 +118,7 @@ const SuccessStorySection = () => {
               />
               
               {/* Overlay Badge */}
-              <Box
+              {/* <Box
                 sx={{
                   position: 'absolute',
                   bottom: 20,
@@ -143,10 +143,10 @@ const SuccessStorySection = () => {
                     Weltmeisterin • Olympia Silber & Bronze
                   </Typography>
                 </Box>
-              </Box>
+              </Box> */}
 
               {/* Achievement Chips */}
-              <Box
+              {/* <Box
                 sx={{
                   position: 'absolute',
                   top: 20,
@@ -174,7 +174,7 @@ const SuccessStorySection = () => {
                     backdropFilter: 'blur(10px)'
                   }}
                 />
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
 

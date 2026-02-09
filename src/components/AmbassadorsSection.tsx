@@ -960,7 +960,7 @@ const AmbassadorsSection = () => {
         </Grid>
 
         {/* Bottom CTA */}
-        <ScrollReveal mode="fade" delay={100}>
+        {/* <ScrollReveal mode="fade" delay={100}>
           <Box 
             textAlign="center" 
             mt={8}
@@ -1040,7 +1040,7 @@ const AmbassadorsSection = () => {
             </Collapse>
           </Box>
 
-        </ScrollReveal>
+        </ScrollReveal> */}
 
       </Container>
 

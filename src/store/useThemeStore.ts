@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
 
 export type ThemeMode = 
   | 'light' 
@@ -20,6 +19,7 @@ export type ThemeMode =
 interface ThemeState {
   mode: ThemeMode;
   setMode: (mode: ThemeMode) => void;
+  initializeTheme: () => void;
   // NEU: Animation Flag
   animationsEnabled: boolean;
   toggleAnimations: () => void;
@@ -28,34 +28,21 @@ interface ThemeState {
   toggleDevMode: () => void;
 }
 
-export const useThemeStore = create<ThemeState>()(
-  persist(
-    (set) => ({
-      mode: 'ocean-dark',
-      setMode: (mode) => set({ mode }),
-      
-      // Default: true
-      animationsEnabled: true,
-      toggleAnimations: () => set((state) => ({ animationsEnabled: !state.animationsEnabled })),
-      
-      // Dev Mode: Default false (hidden)
-      devMode: false,
-      toggleDevMode: () => set((state) => ({ devMode: !state.devMode })),
-    }),
-    {
-      name: 'theme-storage',
-      version: 2,
-      migrate: (persistedState: any, version: number) => {
-        if (version < 2) {
-          // Reset to defaults for version 2
-          return {
-            mode: 'ocean-dark',
-            animationsEnabled: true,
-            devMode: false,
-          };
-        }
-        return persistedState;
-      },
+export const useThemeStore = create<ThemeState>()((set) => ({
+  mode: 'ocean', // Safe SSR default
+  setMode: (mode) => set({ mode }),
+  initializeTheme: () => {
+    if (typeof window !== 'undefined') {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      set({ mode: prefersDark ? 'ocean-dark-b' : 'ocean' });
     }
-  )
-);
+  },
+  
+  // Default: true
+  animationsEnabled: true,
+  toggleAnimations: () => set((state) => ({ animationsEnabled: !state.animationsEnabled })),
+  
+  // Dev Mode: Default false (hidden)
+  devMode: false,
+  toggleDevMode: () => set((state) => ({ devMode: !state.devMode })),
+}));

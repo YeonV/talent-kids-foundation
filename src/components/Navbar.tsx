@@ -24,6 +24,7 @@ import {
 import { FaBars, FaTimes, FaHeart } from 'react-icons/fa';
 import ThemeSelector from '@/components/ThemeSelector';
 import { navItems } from '@/data/content';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const theme = useTheme();
@@ -177,6 +178,7 @@ const Navbar = () => {
               }}>
                 <ThemeSelector />
               </Box>
+              <DarkModeToggle />
 
               <Button 
                 variant="contained" 

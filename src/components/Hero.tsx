@@ -167,7 +167,7 @@ const Hero = ({
                         color="inherit"
                         size="large"
                         endIcon={<FaArrowRight />}
-                        onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => document.getElementById('founder')?.scrollIntoView({ behavior: 'smooth' })}
                         sx={{ px: 4, py: 1.5, borderColor: 'rgba(255,255,255,0.5)' }}
                     >
                         Mehr Erfahren

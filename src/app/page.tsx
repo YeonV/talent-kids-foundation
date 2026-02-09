@@ -1,13 +1,13 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import MissionSection from '@/components/MissionSection';
+// import MissionSection from '@/components/MissionSection';
 import FounderSection from '@/components/FounderSection';
 import SuccessStorySection from '@/components/SuccessStorySection';
-import ProgramSection from '@/components/ProgramSection';
-import TrainersSection from '@/components/TrainersSection';
-import TeamSection from '@/components/TeamSection';
+// import ProgramSection from '@/components/ProgramSection';
+// import TrainersSection from '@/components/TrainersSection';
+// import TeamSection from '@/components/TeamSection';
 import AmbassadorsSection from '@/components/AmbassadorsSection';
-import NetworkSection from '@/components/NetworkSection';
+// import NetworkSection from '@/components/NetworkSection';
 import DonationSection from '@/components/DonationSection';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal'; // Neu importieren
@@ -21,11 +21,11 @@ export default function Home() {
       {/* Hero braucht kein ScrollReveal, da es "Above the Fold" ist */}
       <Hero />
       
-      <div id="mission">
+      {/* <div id="mission">
         <ScrollReveal direction="up">
           <MissionSection />
         </ScrollReveal>
-      </div>
+      </div> */}
       
       {/* Slide von links wirkt dynamisch für Story-Content */}
       <ScrollReveal direction="right" delay={200}>
@@ -37,30 +37,30 @@ export default function Home() {
         <SuccessStorySection />
       </ScrollReveal>
       
-      <div id="program">
+      {/* <div id="program">
         <ScrollReveal mode="fade">
           <ProgramSection />
         </ScrollReveal>
-      </div>
+      </div> */}
       
       {/* Trainer & Team sollen sanft von unten kommen */}
-      <ScrollReveal direction="up" threshold={0.1}>
+      {/* <ScrollReveal direction="up" threshold={0.1}>
         <TrainersSection />
-      </ScrollReveal>
+      </ScrollReveal> */}
       
-      <div id="team">
+      {/* <div id="team">
         <ScrollReveal mode="fade">
           <TeamSection />
         </ScrollReveal>
-      </div>
+      </div> */}
       
       <div id="ambassadors">
         <AmbassadorsSection />
       </div>
       
-      <ScrollReveal mode="fade">
+      {/* <ScrollReveal mode="fade">
         <NetworkSection />
-      </ScrollReveal>
+      </ScrollReveal> */}
       
       <ParallaxQuote />
 

@@ -100,10 +100,11 @@ export const legalLinks = [
 ];
 
 export const navItems = [
-  { label: 'Mission', target: 'mission' },
-  { label: 'Konzept', target: 'program' },
-  { label: 'Botschafter', target: 'ambassadors' },
-  { label: 'Team', target: 'team' },
+  // { label: 'Mission', target: 'founder' },
+  // { label: 'Konzept', target: 'program' },
+  { label: 'Success Story', target: 'success-story' },
+  { label: 'Ambassadors', target: 'ambassadors' },
+  // { label: 'Team', target: 'team' },
 ];
 
 export const ecosystem = [

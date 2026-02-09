@@ -8,6 +8,12 @@
     "buildv2": "next build",
     "prebuildv2": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/(output:\\s*'export',)/,'$1\\n  basePath: \\'/v2\\','); fs.writeFileSync('next.config.ts',cfg);\"",
     "postbuildv2": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/\\s*basePath:\\s*'\\/v2',\\n?/,''); fs.writeFileSync('next.config.ts',cfg);\"",
+    "buildv3": "next build",
+    "prebuildv3": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/(output:\\s*'export',)/,'$1\\n  basePath: \\'/v3\\','); fs.writeFileSync('next.config.ts',cfg);\"",
+    "postbuildv3": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/\\s*basePath:\\s*'\\/v3',\\n?/,''); fs.writeFileSync('next.config.ts',cfg);\"",
+    "buildv4": "next build",
+    "prebuildv4": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/(output:\\s*'export',)/,'$1\\n  basePath: \\'/v4\\','); fs.writeFileSync('next.config.ts',cfg);\"",
+    "postbuildv4": "node -e \"let fs=require('fs'); let cfg=fs.readFileSync('next.config.ts','utf8'); cfg=cfg.replace(/\\s*basePath:\\s*'\\/v4',\\n?/,''); fs.writeFileSync('next.config.ts',cfg);\"",
     "start": "next start",
     "lint": "eslint"
   },

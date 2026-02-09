@@ -305,8 +305,8 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
                         alignItems: 'flex-start',
                         p: 2,
                         bgcolor: alpha(theme.palette.primary.main, 0.05),
-                        borderRadius: 2,
-                        borderLeft: `3px solid ${theme.palette.primary.main}`
+                        // borderRadius: 2,
+                        // borderLeft: `3px solid ${theme.palette.primary.main}`
                       }}
                     >
                       <FaMedal 

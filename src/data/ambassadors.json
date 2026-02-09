@@ -29,9 +29,9 @@
     "name": "Ramin Tehrani",
     "sport": "Skateboard",
     "images": [
+      "/img/ambassadors/ramin-tehrani/3.jpg",
       "/img/ambassadors/ramin-tehrani/1.jpg",
       "/img/ambassadors/ramin-tehrani/2.jpg",
-      "/img/ambassadors/ramin-tehrani/3.jpg",
       "/img/ambassadors/ramin-tehrani/4.jpg",
       "/img/ambassadors/ramin-tehrani/5.jpg",
       "/img/ambassadors/ramin-tehrani/6.jpg"
@@ -89,6 +89,8 @@
     "name": "Anna Maria Wagner",
     "sport": "Judo",
     "images": [
+      "/img/ambassadors/anna-maria-wagner/8.jpg",
+      "/img/ambassadors/anna-maria-wagner/12.jpg",
       "/img/ambassadors/anna-maria-wagner/1.jpg",
       "/img/ambassadors/anna-maria-wagner/2.jpg",
       "/img/ambassadors/anna-maria-wagner/3.jpg",
@@ -96,11 +98,9 @@
       "/img/ambassadors/anna-maria-wagner/5.jpg",
       "/img/ambassadors/anna-maria-wagner/6.jpg",
       "/img/ambassadors/anna-maria-wagner/7.jpg",
-      "/img/ambassadors/anna-maria-wagner/8.jpg",
       "/img/ambassadors/anna-maria-wagner/9.jpg",
       "/img/ambassadors/anna-maria-wagner/10.jpg",
       "/img/ambassadors/anna-maria-wagner/11.jpg",
-      "/img/ambassadors/anna-maria-wagner/12.jpg",
       "/img/ambassadors/anna-maria-wagner/13.jpg"
     ],
     "profession": "Sportsoldatin und Studentin Hotel und Tourismusmanagement",
@@ -125,9 +125,9 @@
     "sport": "Leichtathletik (Para)",
     "specialization": "Weitsprung, 100m, 200m",
     "images": [
+      "/img/ambassadors/noah-bodelier/3.jpg",
       "/img/ambassadors/noah-bodelier/1.jpg",
-      "/img/ambassadors/noah-bodelier/2.jpg",
-      "/img/ambassadors/noah-bodelier/3.jpg"
+      "/img/ambassadors/noah-bodelier/2.jpg"
     ],
     "profession": "Jura Student",
     "birthDate": "29.09.2003",
@@ -149,10 +149,10 @@
     "name": "Martin Becker",
     "sport": "Wasserball",
     "images": [
+      "/img/ambassadors/martin-becker/4.jpg",
       "/img/ambassadors/martin-becker/1.jpg",
       "/img/ambassadors/martin-becker/2.jpg",
       "/img/ambassadors/martin-becker/3.jpg",
-      "/img/ambassadors/martin-becker/4.jpg",
       "/img/ambassadors/martin-becker/5.jpg",
       "/img/ambassadors/martin-becker/6.jpg"
     ],
@@ -217,9 +217,9 @@
     "sport": "Volleyball",
     "specialization": "Sitzvolleyball (Para)",
     "images": [
+      "/img/ambassadors/lukas-schiwy/3.jpg",
       "/img/ambassadors/lukas-schiwy/4.jpg",
       "/img/ambassadors/lukas-schiwy/2.jpg",
-      "/img/ambassadors/lukas-schiwy/3.jpg",
       "/img/ambassadors/lukas-schiwy/1.jpg"
     ],
     "profession": "Unternehmensberater",
@@ -241,10 +241,10 @@
     "sport": "Fechten",
     "specialization": "Säbelfechter",
     "images": [
+      "/img/ambassadors/matyas-szabo/4.jpg",
       "/img/ambassadors/matyas-szabo/1.jpg",
       "/img/ambassadors/matyas-szabo/2.jpg",
       "/img/ambassadors/matyas-szabo/3.jpg",
-      "/img/ambassadors/matyas-szabo/4.jpg",
       "/img/ambassadors/matyas-szabo/5.jpg"
     ],
     "profession": "Berufssoldat, jetzt bei Bayer in Leverkusen, Chemie- und Klimapolitik",
@@ -313,8 +313,8 @@
     "name": "Max Weisskirchen",
     "sport": "Badminton",
     "images": [
-      "/img/ambassadors/max-weisskirchen/1.jpg",
       "/img/ambassadors/max-weisskirchen/2.jpg",
+      "/img/ambassadors/max-weisskirchen/1.jpg",
       "/img/ambassadors/max-weisskirchen/3.jpg"
     ],
     "birthDate": "18.10.1996",

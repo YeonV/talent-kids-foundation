@@ -41,6 +41,7 @@ interface AmbassadorDialogProps {
 
 const ImageSliderDialog = ({ images }: { images: string[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -50,13 +51,35 @@ const ImageSliderDialog = ({ images }: { images: string[] }) => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        handleNext();
+      } else {
+        handlePrev();
+      }
+    }
+    setTouchStartX(null);
+  };
+
   return (
     <Box 
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       sx={{ 
         position: 'relative', 
         width: '100%', 
         height: '100%',
-        minHeight: 400
+        minHeight: 400,
+        touchAction: 'pan-y'
       }}
     >
       <Box
@@ -157,7 +180,7 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
           maxHeight: { xs: '100vh', md: '90vh' },
           m: { xs: 0, md: 2 },
           borderRadius: { xs: 0, md: 2 },
-          p: { xs: 0, md: 2 }
+          p: 0
         }
       }}
     >
@@ -180,25 +203,63 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
         <MdClose size={20} />
       </IconButton>
 
-      <DialogContent sx={{ p: 0, height: '100%' }}>
-        <Box 
-          sx={{ 
-            display: 'flex',
-            flexDirection: { xs: 'column', md: 'row' },
-            minHeight: { xs: '100%', md: 500 },
-            maxHeight: { xs: '100%', md: '85vh' },
-            height: { xs: '100%', md: 'auto' }
-          }}
-        >
-          {/* Left Side - Content */}
+      <DialogContent
+        sx={{
+          p: 0,
+          height: '100%',
+          overflowY: 'auto',
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          minHeight: { xs: '100%', md: 500 },
+          maxHeight: { md: '90vh' },
+          position: 'relative'
+        }}
+      >
+          {/* Left Side - Image Slider */}
+          <Box
+            sx={{
+              width: { xs: '100%', md: '45%' },
+              height: { xs: '45vh', md: 'auto' },
+              minHeight: { xs: 300, md: 500 },
+              bgcolor: alpha(theme.palette.primary.main, 0.05),
+              flexShrink: 0,
+              overflow: 'hidden',
+              position: { xs: 'sticky', md: 'relative' },
+              top: 0,
+              zIndex: 0,
+              order: { xs: -1, md: 0 },
+              '&::before': {
+                content: '""',
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                bottom: 0,
+                width: { xs: 0, md: 0 },
+                background: `linear-gradient(to right, ${theme.palette.background.default}, transparent)`,
+                zIndex: 1,
+                pointerEvents: 'none'
+              }
+            }}
+          >
+            <ImageSliderDialog images={ambassador.images} />
+          </Box>
+
+          {/* Right Side - Content */}
           <Box 
             sx={{ 
-              flex: 1,
-              p: { xs: 2, sm: 3, md: 4 },
+              flex: { xs: 'none', md: 1 },
+              minHeight: { xs: '60vh', md: 'auto' },
+              p: { xs: 3, sm: 4, md: 4 },
               display: 'flex',
               flexDirection: 'column',
               gap: { xs: 2, md: 2.5 },
-              overflowY: 'auto'
+              overflowY: { xs: 'visible', md: 'auto' },
+              position: 'relative',
+              zIndex: 1,
+              bgcolor: 'background.default',
+              borderRadius: { xs: '24px 24px 0 0', md: 0 },
+              marginTop: { xs: '-24px', md: 0 },
+              boxShadow: { xs: '0 -10px 20px rgba(0,0,0,0.05)', md: 'none' }
             }}
           >
             <Box>
@@ -240,7 +301,8 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
                     rel="noopener noreferrer"
                     sx={{
                       display: 'flex',
-                      align: 0.75,
+                      alignItems: 'center',
+                      gap: 0.75,
                       px: { xs: 1.5, sm: 2 },
                       py: { xs: 0.75, sm: 1 },
                       borderRadius: 2,
@@ -343,36 +405,6 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
               </Box>
             )}
           </Box>
-
-          {/* Right Side - Image Slider */}
-          <Box 
-            sx={{ 
-              width: { xs: '100%', md: '48%' },
-              minHeight: { xs: 300, sm: 350, md: 500 },
-              maxHeight: { xs: '40vh', md: '85vh' },
-              bgcolor: alpha(theme.palette.primary.main, 0.05),
-              flexShrink: 0,
-              overflow: 'hidden',
-              borderTopRightRadius: { md: 'inherit' },
-              borderBottomRightRadius: { md: 'inherit' },
-              position: 'relative',
-              order: { xs: -1, md: 0 },
-              '&::before': {
-                content: '""',
-                position: 'absolute',
-                left: 0,
-                top: 0,
-                bottom: 0,
-                width: { xs: 0, md: 0 },
-                background: `linear-gradient(to right, ${theme.palette.background.default}, transparent)`,
-                zIndex: 1,
-                pointerEvents: 'none'
-              }
-            }}
-          >
-            <ImageSliderDialog images={ambassador.images} />
-          </Box>
-        </Box>
       </DialogContent>
     </Dialog>
   );

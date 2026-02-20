@@ -4,33 +4,234 @@
     "name": "Nils Politt",
     "sport": "Radsport",
     "specialization": "Straßenrad",
-    "images": [
-      "/ambassadors/nils-politt/1.jpg"
-    ],
-    "profession": "Profi Radsportler",
-    "birthDate": "06.03.1994",
-    "city": "Hürth",
-    "height": "1.92m",
-    "social": {
-      "instagram": "@nilspolitt"
-    },
-    "family": "Frau Annike, 1 Tochter (*19), 2 Söhne (Luke *21)",
-    "achievements": [
-      "Etappensieg bei der Tour de France 2021",
-      "2018 Paris-Nizza 5. Etappe - 2. Platz"
-    ],
-    "bio": "Nils ist Klassikerspezialist. Seinen größten Erfolg feierte er mit dem Etappensieg bei der Tour de France 2021. Seine Stärken hat er auf hügeligen Etappen von Rundfahren, Eintagesrennen sowie in Zeitfahren. Seinen Durchbruch feierte Nils im Jahr 2018: Auf der fünften Etappe von Paris-Nizza belegte er Platz zwei."
+    "images": []
   },
   {
-    "id": "marc-elvira",
-    "name": "Marc Elvira",
-    "sport": "",
-    "images": [
-      "/ambassadors/marc-elvira/1.jpg",
-      "/ambassadors/marc-elvira/2.jpg",
-      "/ambassadors/marc-elvira/3.jpg"
-    ],
-    "profession": "",
-    "achievements": []
+    "id": "dirk-fries",
+    "name": "Dirk Fries",
+    "sport": "Baseball",
+    "images": []
+  },
+  {
+    "id": "jonas-hector",
+    "name": "Jonas Hector",
+    "sport": "Fußball",
+    "images": []
+  },
+  {
+    "id": "benny-hoewedes",
+    "name": "Benny Höwedes",
+    "sport": "Fußball",
+    "images": []
+  },
+  {
+    "id": "matthias-scherz",
+    "name": "Matthias Scherz",
+    "sport": "Fußball",
+    "images": []
+  },
+  {
+    "id": "jens-nettekoven",
+    "name": "Jens Nettekoven",
+    "sport": "Ringen",
+    "images": []
+  },
+  {
+    "id": "leonie-fiebig",
+    "name": "Leonie Fiebig",
+    "sport": "Bob",
+    "images": []
+  },
+  {
+    "id": "philipp-kaese",
+    "name": "Philipp Käse",
+    "sport": "Surfen",
+    "images": []
+  },
+  {
+    "id": "moritz-mueller",
+    "name": "Moritz Müller",
+    "sport": "Eishockey",
+    "images": []
+  },
+  {
+    "id": "thorsten-ankert",
+    "name": "Thorsten Ankert",
+    "sport": "Eishockey",
+    "images": []
+  },
+  {
+    "id": "leeroy-matata",
+    "name": "Leeroy Matata",
+    "sport": "Basketball",
+    "images": []
+  },
+  {
+    "id": "jonas-reckermann",
+    "name": "Jonas Reckermann",
+    "sport": "Beachvolleyball",
+    "images": []
+  },
+  {
+    "id": "mario-eckel",
+    "name": "Mario Eckel",
+    "sport": "Breaking",
+    "images": []
+  },
+  {
+    "id": "cologne-falcons",
+    "name": "Cologne Falcons",
+    "sport": "Flag Football",
+    "images": []
+  },
+  {
+    "id": "matthias-steiner",
+    "name": "Matthias Steiner",
+    "sport": "Gewichtheben",
+    "images": []
+  },
+  {
+    "id": "julian-koester",
+    "name": "Julian Köster",
+    "sport": "Handball",
+    "images": []
+  },
+  {
+    "id": "1-fc-koeln",
+    "name": "1. FC Köln",
+    "sport": "Handball",
+    "images": []
+  },
+  {
+    "id": "jasmin-juettner",
+    "name": "Jasmin Jüttner",
+    "sport": "Karate",
+    "images": []
+  },
+  {
+    "id": "kathrin-schultheis",
+    "name": "Kathrin Schultheis",
+    "sport": "Karate",
+    "images": []
+  },
+  {
+    "id": "eva-altmann",
+    "name": "Eva Altmann",
+    "sport": "Karate",
+    "images": []
+  },
+  {
+    "id": "stephan-prantl",
+    "name": "Stephan Prantl",
+    "sport": "Radsport BMX",
+    "images": []
+  },
+  {
+    "id": "felix-prangenberg",
+    "name": "Felix Prangenberg",
+    "sport": "Radsport BMX",
+    "images": []
+  },
+  {
+    "id": "darja-varfolomeev",
+    "name": "Darja Varfolomeev",
+    "sport": "Rhythmische Sportgymnastik",
+    "images": []
+  },
+  {
+    "id": "sabrina-schoeps",
+    "name": "Sabrina Schoeps",
+    "sport": "Rudern",
+    "images": []
+  },
+  {
+    "id": "christopher-becerra",
+    "name": "Christopher Becerra",
+    "sport": "Rudern",
+    "images": []
+  },
+  {
+    "id": "oliver-haendler",
+    "name": "Oliver Händler",
+    "sport": "Rudern",
+    "images": []
+  },
+  {
+    "id": "lukas-maertens",
+    "name": "Lukas Märtens",
+    "sport": "Schwimmen",
+    "images": []
+  },
+  {
+    "id": "hannah-meul",
+    "name": "Hannah Meul",
+    "sport": "Sportklettern",
+    "images": []
+  },
+  {
+    "id": "caspar-duebbers",
+    "name": "Caspar Dübbers",
+    "sport": "Sportklettern",
+    "images": []
+  },
+  {
+    "id": "karlo-gaul",
+    "name": "Karlo Gaul",
+    "sport": "Sportklettern",
+    "images": []
+  },
+  {
+    "id": "simon-roesner",
+    "name": "Simon Rösner",
+    "sport": "Squash",
+    "images": []
+  },
+  {
+    "id": "levent-tuncat",
+    "name": "Levent Tuncat",
+    "sport": "Taekwondo",
+    "images": []
+  },
+  {
+    "id": "saerom-kim",
+    "name": "Saerom Kim",
+    "sport": "Taekwondo",
+    "images": []
+  },
+  {
+    "id": "helena-fromm",
+    "name": "Helena Fromm",
+    "sport": "Taekwondo",
+    "images": []
+  },
+  {
+    "id": "andre-bertelsmeier",
+    "name": "Andre Bertelsmeier",
+    "sport": "Tischtennis",
+    "images": []
+  },
+  {
+    "id": "mike-hollo",
+    "name": "Mike Hollo",
+    "sport": "Tischtennis",
+    "images": []
+  },
+  {
+    "id": "lea-fahron",
+    "name": "Lea Fahron",
+    "sport": "Trampolinturnen",
+    "images": []
+  },
+  {
+    "id": "lukas-fahron",
+    "name": "Lukas Fahron",
+    "sport": "Trampolinturnen",
+    "images": []
+  },
+  {
+    "id": "kieran-baumann",
+    "name": "Kieran Baumann",
+    "sport": "Trampolinturnen",
+    "images": []
   }
 ]

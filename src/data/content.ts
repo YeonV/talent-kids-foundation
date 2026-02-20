@@ -2,24 +2,64 @@ import { ImpactLevel, MissionItem, TeamMember, Trainer } from "@/types";
 
 export const impactLevels: ImpactLevel[] = [
   {
-    value: 25,
-    label: "1 Monat Training",
-    text: "Sichert einem Kind einen Monat lang professionelles Training.",
+    value: 10,
+    label: "Ballkorb",
+    text: "Du füllst den Ballkorb, damit die Kinder losspielen können.",
+  },
+  {
+    value: 15,
+    label: "Trainerstunde",
+    text: "Du schenkst eine Trainerstunde voll echter Begeisterung.",
+  },
+  {
+    value: 20,
+    label: "Material",
+    text: "Du gibst einem Kind das passende Material in die Hand und machst aus Frust ein Erfolgserlebnis.",
+  },
+  {
+    value: 30,
+    label: "Spielfeld",
+    text: "Du baust mit Trainingsmaterialien ein Spielfeld voller Bewegungs-Möglichkeiten.",
+  },
+  {
+    value: 40,
+    label: "Sportnachmittag",
+    text: "Du finanzierst einen Sportnachmittag für eine Schulklasse",
   },
   {
     value: 50,
-    label: "1 Judo-Anzug",
-    text: "Ein hochwertiger Gi, damit das Kind sich zugehörig fühlt.",
+    label: "Sportvormittag",
+    text: "Bewegung statt Klassenzimmer: Du verwandelst einen Schulvormittag in ein Sporterlebnis.",
+  },
+  {
+    value: 75,
+    label: "Mini-Sportevent",
+    text: "Du bringst ein Mini-Sportevent an eine Schule.",
   },
   {
     value: 100,
-    label: "1 Gürtel-Prüfung",
-    text: "Prüfungsgebühr, Urkunde und der neue Gürtel für den Erfolg.",
+    label: "Sport für 50 Kinder",
+    text: "Du ermöglichst 50 Kindern ihren ersten Zugang zu organisiertem Sport",
   },
   {
-    value: 500,
-    label: "1 Schul-Kurs",
-    text: "Finanziert Equipment für eine komplette Schulklasse.",
+    value: 125,
+    label: "Mehrere Stunden",
+    text: "Du machst mehrere Übungs- und Spiel-Stunden für Kinder möglich, die sonst keine Chance hätten.",
+  },
+  {
+    value: 150,
+    label: "Kompletter Aktionstag",
+    text: "Du schenkst einen kompletten Aktionstag voller Sport, Spaß und neuer Erfahrungen.",
+  },
+  {
+    value: 175,
+    label: "Bus zur Sportanlage",
+    text: "Du organisierst den Bus für eine Schulklasse zur Sportanlage.",
+  },
+  {
+    value: 200,
+    label: "Vierwöchiges Projekt",
+    text: "Du finanzierst ein vierwöchiges Sportprojekt an einer Schule",
   },
 ];
 

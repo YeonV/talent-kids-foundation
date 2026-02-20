@@ -12,10 +12,8 @@ interface HeroProps {
 }
 
 const Hero = ({
-    // title = "Wir machen Kinder stark.",
-    title = "Der erste Schritt zählt.",
-    // subtitle = "Zugang zu Sport, Wertevermittlung und Talentförderung für jedes Kind – unabhängig von der Herkunft.",
-    subtitle = "Alles im Leben beginnt mit einem ersten Schritt. Wir räumen Hindernisse aus dem Weg, damit alle Kinder Sport erleben können – mit Freude, Neugier und einem Lächeln.",
+    title = "Wir schenken Kindern Sport",
+    subtitle = "Sport verändert Leben. Der erste Schritt ist dabei der wichtigste. Deshalb helfen wir Kindern ihren ersten Schritt zu machen.",
     videoUrl, // If you have a .mp4 later, pass it here
     imageUrl = "/img/hero/Hero.png" // A placeholder Judo/Sport image
 }: HeroProps) => {
@@ -26,8 +24,8 @@ const Hero = ({
         <Box
             sx={{
                 position: 'relative',
-                height: '90vh', // Nearly full screen
-                minHeight: '600px',
+                height: { xs: '100vh', md: '90vh' },
+                minHeight: { xs: '100vh', md: '600px' },
                 width: '100%',
                 overflow: 'hidden',
                 display: 'flex',
@@ -127,9 +125,10 @@ const Hero = ({
                 <Typography
                     variant="h1"
                     sx={{
-                        mb: 3,
-                        fontSize: { xs: '2.5rem', md: '4.5rem' }, // Responsive font size
-                        textShadow: '0 2px 10px rgba(0,0,0,0.3)'
+                        mb: { xs: 2, md: 3 },
+                        fontSize: { xs: '2rem', sm: '3rem', md: '4.5rem' },
+                        textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                        lineHeight: 1.2
                     }}
                 >
                     {title}
@@ -139,25 +138,36 @@ const Hero = ({
                 <Typography
                     variant="h5"
                     sx={{
-                        mb: 5,
+                        mb: { xs: 4, md: 5 },
                         maxWidth: '800px',
                         mx: 'auto',
                         lineHeight: 1.6,
                         opacity: 0.9,
-                        fontSize: { xs: '1rem', md: '1.25rem' }
+                        fontSize: { xs: '0.95rem', sm: '1.15rem', md: '1.25rem' },
+                        px: { xs: 2, sm: 0 }
                     }}
                 >
                     {subtitle}
                 </Typography>
 
-                {/* Action Buttons */}
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent="center">
+                {/* CTA Buttons */}
+                <Stack 
+                    direction={{ xs: 'column', sm: 'row' }} 
+                    spacing={2} 
+                    justifyContent="center"
+                    sx={{ px: { xs: 2, sm: 0 } }}
+                >
                     <Button
                         variant="contained"
                         size="large"
                         startIcon={<FaHeart />}
                         onClick={() => document.getElementById('donate')?.scrollIntoView({ behavior: 'smooth' })}
-                        sx={{ px: 4, py: 1.5 }}
+                        sx={{ 
+                            px: 4, 
+                            py: { xs: 1.75, md: 1.5 },
+                            fontSize: { xs: '1rem', md: '1.1rem' },
+                            width: { xs: '100%', sm: 'auto' }
+                        }}
                     >
                         Jetzt Helfen
                     </Button>
@@ -168,7 +178,13 @@ const Hero = ({
                         size="large"
                         endIcon={<FaArrowRight />}
                         onClick={() => document.getElementById('founder')?.scrollIntoView({ behavior: 'smooth' })}
-                        sx={{ px: 4, py: 1.5, borderColor: 'rgba(255,255,255,0.5)' }}
+                        sx={{ 
+                            px: 4, 
+                            py: { xs: 1.75, md: 1.5 }, 
+                            borderColor: 'rgba(255,255,255,0.5)',
+                            fontSize: { xs: '1rem', md: '1.1rem' },
+                            width: { xs: '100%', sm: 'auto' }
+                        }}
                     >
                         Mehr Erfahren
                     </Button>

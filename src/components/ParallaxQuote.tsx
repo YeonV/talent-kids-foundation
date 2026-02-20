@@ -56,8 +56,8 @@ const ParallaxQuote = () => {
                 fontSize: { xs: '2.5rem', md: '4rem' }
               }}
             >
-              GEMEINSCHAFT
-              <Box component="span" sx={{ color: theme.palette.primary.main }}>.</Box>
+              Alles beginnt mit dem
+              <Box component="span" sx={{ color: theme.palette.primary.main }}> ersten Schritt.</Box>
             </Typography>
             
             <Typography 
@@ -68,11 +68,11 @@ const ParallaxQuote = () => {
                 fontFamily: theme.typography.h1.fontFamily, // Serif Font (Playfair)
                 maxWidth: '600px',
                 mx: 'auto',
-                lineHeight: 1.6
+                lineHeight: 1.6,
+                fontSize: { xs: '1.25rem', md: '1.5rem' }
               }}
             >
-              Sport ist die Sprache, die jedes Kind versteht. 
-              Hier entstehen Freundschaften, die ein Leben lang halten.
+              Wir schenken Kindern Sport
             </Typography>
           </Box>
         </ScrollReveal>

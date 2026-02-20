@@ -51,7 +51,7 @@ const NetworkSection = () => {
                     >
                         TRANSPARENZ & STRUKTUR
                     </Typography>
-                    <Typography variant="h2" textAlign="center" gutterBottom sx={{ mb: 6 }}>
+                    <Typography variant="h2" textAlign="center" gutterBottom sx={{ mb: 6, fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
                         Ein starkes <span style={{ color: theme.palette.primary.main }}>Netzwerk</span>.
                     </Typography>
 

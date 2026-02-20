@@ -3,7 +3,6 @@
     "id": "stefanie-von-berge",
     "name": "Stefanie von Berge",
     "sport": "Boxen",
-    "specialization": "Weltergewicht",
     "images": [
       "/img/ambassadors/stefanie-von-berge/1.jpg",
       "/img/ambassadors/stefanie-von-berge/2.jpg",
@@ -29,9 +28,9 @@
     "name": "Ramin Tehrani",
     "sport": "Skateboard",
     "images": [
+      "/img/ambassadors/ramin-tehrani/2.jpg",
       "/img/ambassadors/ramin-tehrani/3.jpg",
       "/img/ambassadors/ramin-tehrani/1.jpg",
-      "/img/ambassadors/ramin-tehrani/2.jpg",
       "/img/ambassadors/ramin-tehrani/4.jpg",
       "/img/ambassadors/ramin-tehrani/5.jpg",
       "/img/ambassadors/ramin-tehrani/6.jpg"
@@ -49,7 +48,9 @@
     "name": "Sarah Voss",
     "sport": "Kunstturnen",
     "images": [
-      "/img/ambassadors/sarah-voss/1.jpg"
+      "/img/ambassadors/sarah-voss/1.jpg",
+      "/img/ambassadors/sarah-voss/2.jpg",
+      "/img/ambassadors/sarah-voss/3.jpg"
     ],
     "profession": "Betriebswirtschaftslehre Studentin",
     "birthDate": "21.10.1999",
@@ -80,17 +81,18 @@
     "achievements": [
       "Nachwuchs #1",
       "1st Gen Padel in Deutschland",
+      "U14 Padel-Weltrangliste Platz 24",
       "Teilnahme Junioren-WM 2025"
     ],
-    "bio": "Lenni ist Deutschlands Nachwuchsspieler Nr. 1 und gehört der ersten Generation Padelspieler an. Seine höchste Position in der U14 Padel- Weltrangliste war bisher Platz 24. Sein größter sportlicher Erfolg war sicherlich die Teilnahme an der Junioren Padel-Weltmeisterschaft 2025."
+    "bio": "Lenni ist Deutschlands Padel-Nachwuchsspieler Nr. 1 und gehört der ersten Generation Padelspieler an. Seine höchste Position in der U14 Padel-Weltrangliste war bisher Platz 24. Sein größter sportlicher Erfolg war sicherlich die Teilnahme an der Junioren Padel-Weltmeisterschaft 2025."
   },
   {
     "id": "anna-maria-wagner",
     "name": "Anna Maria Wagner",
     "sport": "Judo",
     "images": [
-      "/img/ambassadors/anna-maria-wagner/8.jpg",
       "/img/ambassadors/anna-maria-wagner/12.jpg",
+      "/img/ambassadors/anna-maria-wagner/8.jpg",
       "/img/ambassadors/anna-maria-wagner/1.jpg",
       "/img/ambassadors/anna-maria-wagner/2.jpg",
       "/img/ambassadors/anna-maria-wagner/3.jpg",
@@ -117,7 +119,7 @@
       "Fahnenträger Olympia Paris 2024"
     ],
     "status": "Oktober 2025 in Judo-Rente",
-    "bio": "Anna-Maria gewann 2021 und 2024 den Weltmeistertitel und holte Bronze bei den Olympischen Spielen 2021 in Tokio. Ein besonderer Moment war die Aufgabe der Fahnenträgerin bei den Olympischen Spielen 2024 in Paris." 
+    "bio": "Anna-Maria Wagner begann ihre Judo-Laufbahn in der Judo-AG an ihrer eigenen Schule und fand von dort aus den Weg in ihren ersten Verein. Anna-Maria gewann 2021 und 2024 den Weltmeistertitel und holte Bronze bei den Olympischen Spielen 2021 in Tokio. Ein besonderer Moment war die Aufgabe der Fahnenträgerin bei den Olympischen Spielen 2024 in Paris." 
   },
   {
     "id": "noah-bodelier",
@@ -185,16 +187,20 @@
       "instagram": "@maxkieffer"
     },
     "achievements": [
-      "2022 D+D Real Czech Masters in Prag - Erster Titel auf der DP World Tour"
+      "2022 D+D Real Czech Masters in Prag - Erster Titel auf der DP World Tour",
+      "Deutscher Meister (Amateur)",
+      "Sieg St. Andrews Trophy",
+      "Junior Ryder Cup"
     ],
-    "bio": "Spielt seit er 5 ist Golf, mit 15 Jahren wurde er in den deutschen Nationalkader berufen und gehört seitdem zum Elite Team Germany, zahlreiche Titel in seiner Amateurzeit, wie den Deutschen Meisterschaften, dem Sieg bei der St. Andrews Trophy und dem Junior Ryder Cup"
+    "bio": "Max begleitete schon als kleines Kind seine Eltern regelmäßig zum Golfplatz und fing im Alter von 5 Jahren selbst an, den Golfsport zu erlernen. Mit 15 Jahren wurde er in den deutschen Nationalkader berufen und gehört seitdem zum Elite Team Germany. Neben zahlreichen Titeln in seiner Amateurzeit, wie den Deutschen Meisterschaften, dem Sieg bei der St. Andrews Trophy und dem Junior Ryder Cup, gewann er 2022 das D+D Real Czech Masters in Prag und somit seinen ersten Titel auf der DP World Tour."
   },
   {
     "id": "philipp-petzschner",
     "name": "Philipp Petzschner",
     "sport": "Tennis",
     "images": [
-      "/img/ambassadors/philipp-petzschner/1.jpg"
+      "/img/ambassadors/philipp-petzschner/1.jpg",
+      "/img/ambassadors/philipp-petzschner/2.jpg"
     ],
     "profession": "Jugend-Bundestrainer beim dt. Tennisbund (DTB) seit 2020",
     "birthDate": "24.03.1984",
@@ -230,10 +236,13 @@
     },
     "achievements": [
       "Paralympics 2024 - 4. Platz",
+      "Paralympics 2016 + 2021 - 6. Platz",
       "WM 2022 - 5. Platz",
-      "EM 2025 - 2. Platz"
+      "EM 2025 - 2. Platz (Vize-Europameister)",
+      "Mehrfacher Deutscher Meister"
     ],
-    "disability": "Dysmelie"
+    "disability": "Dysmelie",
+    "bio": "Lukas probierte verschiedenen Sportarten, bevor er seine Leidenschaft als Angreifer im Sitzvolleyball fand. Talent und Ehrgeiz verhalfen ihm zu einem Platz im Kader des TSV Bayer Leverkusen und in der Nationalmannschaft. Mittlerweile ist Lukas mehrfacher Deutscher Meister sowie Vize-Europameister. 2016 und 2021 nahm er an den Paralympics teil, bei denen er mit seiner Mannschaft den 6. Platz erreichte."
   },
   {
     "id": "matyas-szabo",
@@ -241,9 +250,9 @@
     "sport": "Fechten",
     "specialization": "Säbelfechter",
     "images": [
+      "/img/ambassadors/matyas-szabo/2.jpg",
       "/img/ambassadors/matyas-szabo/4.jpg",
       "/img/ambassadors/matyas-szabo/1.jpg",
-      "/img/ambassadors/matyas-szabo/2.jpg",
       "/img/ambassadors/matyas-szabo/3.jpg",
       "/img/ambassadors/matyas-szabo/5.jpg"
     ],
@@ -262,7 +271,7 @@
       "Mannschaft Europameister 2019",
       "Fackelträger Olympia 2016 Rio"
     ],
-    "bio": "Matyas Szabo ist Weltmeister und fünffacher deutscher Meister. 2019 wurde er mit der Mannschaft in Düsseldorf Europameister. 2016 trug er die Olympischen Fackel durch das Athletendorf in Rio."
+    "bio": "Sein Vater und Seine Mutter vereint die Leidenschaft zum Fechten. Sie fanden sich über den Sport. Dadurch sah Matyas Trainings- und Tunierhallen überall auf der Welt. Mit vier Jahren begann er mit Fechten. Matyas Szabo ist Weltmeister und fünffacher deutscher Meister. 2019 wurde er mit der Mannschaft in Düsseldorf Europameister. 2016 trug er die Olympischen Fackel durch das Athletendorf in Rio."
   },
   {
     "id": "lea-lin-teutenberg",
@@ -270,7 +279,10 @@
     "sport": "Radsport",
     "specialization": "Straßenrad",
     "images": [
-      "/img/ambassadors/lea-lin-teutenberg/1.jpg"
+      "/img/ambassadors/lea-lin-teutenberg/1.jpg",
+      "/img/ambassadors/lea-lin-teutenberg/2.jpg",
+      "/img/ambassadors/lea-lin-teutenberg/3.jpg",
+      "/img/ambassadors/lea-lin-teutenberg/4.webp"
     ],
     "profession": "Sportsoldatin / Profi Radsportlerin",
     "birthDate": "02.07.1999",
@@ -293,7 +305,9 @@
     "sport": "Bahnradfahren",
     "specialization": "Bahnrad + Straße",
     "images": [
-      "/img/ambassadors/tim-torn-teutenberg/1.jpg"
+      "/img/ambassadors/tim-torn-teutenberg/1.jpg",
+      "/img/ambassadors/tim-torn-teutenberg/2.jpg",
+      "/img/ambassadors/tim-torn-teutenberg/3.jpg"
     ],
     "profession": "Profi Radsportler",
     "birthDate": "19.06.2002",
@@ -325,7 +339,10 @@
     },
     "relationship": "August 2024 in Valencia verlobt mit Chiara Sophie",
     "achievements": [
-      "3 Deutsche Meistertitel"
+      "3 Deutsche Meistertitel",
+      "Weltrangliste Platz 50",
+      "Jugend-EM 2015: Gold im Mixed + Silber Herreneinzel",
+      "EM 2021: Bronze"
     ],
     "status": "Seit 2024 in Rente",
     "bio": "Max hat, u.a. mit drei deutschen Meistertiteln, hierzulande über viele Jahre das Geschehen im Herreneinzel geprägt. In der Weltrangliste schaffte er es bis auf Rang 50. Dabei errang er u.a. bei der Jugend-EM 2015 Gold im Mixed und Silber im Herreneinzel und wurde bei der EM 2021 Dritter."
@@ -352,6 +369,6 @@
       "2x Weltmeister"
     ],
     "current": "Übernimmt beim KTHC Rot-Weiss in Köln das Team der 1. Damen",
-    "bio": "Tibor ist einer der erfolgreichste Hockeyspieler Deutschalands. Er wurde mit der deutschen Nationalmannschaft je zweimal Welt- und Europameister und 2008 Olympiasieger. Für seine sportlichen Erfolge erhielt er das Silberne Lorbeerblatt."
+    "bio": "Tibor ist einer der erfolgreichste Hockeyspieler Deutschalands. Tibor Weißenborn ging in denselben Kindergarten wie Florian Keller. Als dessen Vater Carsten Keller eine Kindermannschaft aufbaute, war Tibor dabei. Er wurde mit der deutschen Nationalmannschaft je zweimal Welt- und Europameister und 2008 Olympiasieger."
   }
 ]

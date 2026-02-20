@@ -387,11 +387,11 @@ const AmbassadorsSection = () => {
                 {ambassador.name}
               </Typography>
               
-              {ambassador.profession && (
+              {/* {ambassador.profession && (
                 <Typography variant="body2" sx={{ mb: 2, color: 'rgba(255,255,255,0.95)', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
                   {ambassador.profession}
                 </Typography>
-              )}
+              )} */}
 
               {ambassador.achievements.length > 0 && (
                 <Box 
@@ -472,11 +472,11 @@ const AmbassadorsSection = () => {
               <Typography variant="h6" fontWeight={700} gutterBottom>
                 {ambassador.name}
               </Typography>
-              {ambassador.profession && (
+              {/* {ambassador.profession && (
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
                   {ambassador.profession}
                 </Typography>
-              )}
+              )} */}
             </Box>
           </Box>
         </Card>
@@ -558,11 +558,11 @@ const AmbassadorsSection = () => {
                 {ambassador.name}
               </Typography>
               
-              {ambassador.profession && (
+              {/* {ambassador.profession && (
                 <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.95)', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
                   {ambassador.profession}
                 </Typography>
-              )}
+              )} */}
             </Box>
           </Box>
         </Card>
@@ -640,11 +640,11 @@ const AmbassadorsSection = () => {
                 {ambassador.name}
               </Typography>
               
-              {ambassador.profession && (
+              {/* {ambassador.profession && (
                 <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.95)', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
                   {ambassador.profession}
                 </Typography>
-              )}
+              )} */}
             </Box>
           </Box>
         </Card>
@@ -774,11 +774,11 @@ const AmbassadorsSection = () => {
             <Typography variant="h6" fontWeight={700} gutterBottom>
               {ambassador.name}
             </Typography>
-            {ambassador.profession && (
+            {/* {ambassador.profession && (
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                 {ambassador.profession}
               </Typography>
-            )}
+            )} */}
             {ambassador.achievements.length > 0 && (
               <Box 
                 sx={{ 
@@ -867,11 +867,11 @@ const AmbassadorsSection = () => {
             </Typography>
           )}
           
-          {ambassador.profession && (
+          {/* {ambassador.profession && (
             <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
               {ambassador.profession}
             </Typography>
-          )}
+          )} */}
 
           {/* Top Achievement */}
           {ambassador.achievements.length > 0 && (
@@ -914,7 +914,7 @@ const AmbassadorsSection = () => {
         {/* Section Header */}
         <ScrollReveal mode="fade">
           <Box textAlign="center" mb={4}>
-            <Typography 
+            {/* <Typography 
               variant="overline" 
               sx={{ 
                 color: 'primary.main', 
@@ -924,18 +924,17 @@ const AmbassadorsSection = () => {
                 mb: 1
               }}
             >
-              Our Ambassadors
-            </Typography>
-            <Typography variant="h2" fontWeight={800} gutterBottom>
+              Unsere Schrittmacher
+            </Typography> */}
+            <Typography variant="h2" fontWeight={800} gutterBottom sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
               Unsere <Box component="span" sx={{ color: 'primary.main' }}>Schrittmacher</Box>
             </Typography>
             <Typography 
               variant="h6" 
               color="text.secondary" 
-              sx={{ maxWidth: 700, mx: 'auto', lineHeight: 1.7 }}
+              sx={{ maxWidth: 700, mx: 'auto', lineHeight: 1.7, fontSize: { xs: '1rem', md: '1.25rem' } }}
             >
-              Olympiasieger, Weltmeister und Profisportler unterstützen unsere Mission, 
-              Kinder durch Sport stark zu machen.
+              Unser Ansatz wird getragen von den führenden Vorbildern ihrer Sportarten. Gemeinsam mit ihnen öffnen wir Kindern systematisch die Tür zu einem Leben mit Sport.
             </Typography>
           </Box>
         </ScrollReveal>

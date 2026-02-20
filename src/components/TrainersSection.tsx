@@ -52,7 +52,7 @@ const TrainersSection = () => {
                             <Typography variant="overline" color="primary" fontWeight={800} letterSpacing={1.2}>
                                 COACHES & VORBILDER
                             </Typography>
-                            <Typography variant="h2" gutterBottom>
+                            <Typography variant="h2" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
                                 Unsere <span style={{ color: theme.palette.primary.main }}>Trainer:innen</span>.
                             </Typography>
                             <Typography variant="body1" color="text.secondary" maxWidth={600}>

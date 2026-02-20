@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import {
     Box, Grid,
     Container,
@@ -7,13 +8,19 @@ import {
     Button,
     Stack,
     useTheme,
-    Paper
+    Paper,
+    Dialog,
+    DialogContent,
+    IconButton,
+    Avatar,
+    Chip
 } from '@mui/material';
-import { FaArrowRight, FaQuoteLeft } from 'react-icons/fa';
+import { FaArrowRight, FaQuoteLeft, FaTimes } from 'react-icons/fa';
 import { withBasePath } from '@/lib/basePath';
 
 const FounderSection = () => {
     const theme = useTheme();
+    const [dialogOpen, setDialogOpen] = useState(false);
 
     return (
         <Box
@@ -58,7 +65,7 @@ const FounderSection = () => {
                                     zIndex: 1,
                                     borderRadius: 4,
                                     overflow: 'hidden',
-                                    transform: 'rotate(-2deg)', // Slight artistic tilt
+                                    transform: { xs: 'rotate(0deg)', md: 'rotate(-2deg)' }, // Slight artistic tilt on desktop only
                                     transition: 'transform 0.5s ease',
                                     // '&:hover': { transform: 'rotate(0deg)' }
                                 }}
@@ -117,7 +124,7 @@ const FounderSection = () => {
                                 >
                                     DER GRÜNDER
                                 </Typography>
-                                <Typography variant="h2" gutterBottom>
+                                <Typography variant="h2" gutterBottom sx={{ fontSize: { xs: '1.75rem', sm: '2.5rem', md: '3rem' } }}>
                                     Von der Matte <br />
                                     <Box component="span" sx={{ color: 'primary.main' }}>ins Leben.</Box>
                                 </Typography>
@@ -140,16 +147,17 @@ const FounderSection = () => {
                                     component="p"
                                     sx={{
                                         fontStyle: 'italic',
-                                        fontFamily: theme.typography.h1.fontFamily, // Uses Playfair in Classic, Montserrat in Modern
+                                        fontFamily: theme.typography.h1.fontFamily,
+                                        fontSize: { xs: '1rem', sm: '1.25rem', md: '1.5rem' },
                                         lineHeight: 1.6,
                                         mb: 2,
                                         color: 'text.primary'
                                     }}
                                 >
-                                    Ich möchte möglichst vielen Kindern Zugang zu olympischen und paralympischen Sportarten verschaffen, die ihnen sonst vielleicht verschlossen bleiben würden. Dabei Talente zu finden und zu fördern ist mir eine Herzensangelegenheit.
+                                    Ich habe gelernt: Kinder scheitern nicht am Sport. Sie scheitern daran, dass niemand ihnen die Tür öffnet. Genau das werden wir ändern. Kurz gesagt: Wir schenken Kindern Sport.
                                 </Typography>
-                                <Typography variant="subtitle1" fontWeight={600}>
-                                    — Benjamin Behrla (Benny)
+                                <Typography variant="subtitle1" fontWeight={600} sx={{ textAlign: 'right' }}>
+                                    Benny Behrla
                                 </Typography>
                             </Box>
 
@@ -193,7 +201,7 @@ const FounderSection = () => {
                                     variant="text"
                                     color="primary"
                                     endIcon={<FaArrowRight />}
-                                    onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}
+                                    onClick={() => setDialogOpen(true)}
                                     sx={{ p: 0, '&:hover': { bgcolor: 'transparent', textDecoration: 'underline' } }}
                                 >
                                     Zum Profil von Benny
@@ -204,6 +212,87 @@ const FounderSection = () => {
 
                 </Grid>
             </Container>
+
+            {/* --- PROFILE DIALOG --- */}
+            <Dialog
+                open={dialogOpen}
+                onClose={() => setDialogOpen(false)}
+                maxWidth="sm"
+                fullWidth
+                sx={{
+                    '& .MuiDialog-paper': {
+                        width: { xs: '100%', sm: 'auto' },
+                        height: { xs: '100%', sm: 'auto' },
+                        maxHeight: { xs: '100%', sm: 'calc(100% - 64px)' },
+                        margin: { xs: 0, sm: 2 },
+                        borderRadius: { xs: 0, sm: 4 }
+                    }
+                }}
+                PaperProps={{
+                    sx: { p: 1 }
+                }}
+            >
+                <Box sx={{ position: 'absolute', right: 16, top: 16, zIndex: 10 }}>
+                    <IconButton onClick={() => setDialogOpen(false)} sx={{ bgcolor: 'background.paper' }}>
+                        <FaTimes />
+                    </IconButton>
+                </Box>
+
+                <DialogContent sx={{ p: { xs: 2, sm: 4 } }}>
+                    <Stack alignItems="center" spacing={3}>
+
+                        {/* Avatar */}
+                        <Avatar
+                            src={withBasePath("/img/team/BennyBehrla.jpg")}
+                            sx={{ 
+                                width: 120, 
+                                height: 120, 
+                                border: `4px solid ${theme.palette.background.paper}`, 
+                                boxShadow: theme.shadows[3] 
+                            }}
+                        />
+
+                        <Box textAlign="center">
+                            <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '1.5rem', md: '2.125rem' } }}>
+                                Benjamin Behrla
+                            </Typography>
+                            <Typography variant="subtitle1" color="primary" fontWeight={700}>
+                                Gründer & Vorstand
+                            </Typography>
+
+                            {/* Tags */}
+                            <Stack direction="row" spacing={1} justifyContent="center" mt={2} flexWrap="wrap" useFlexGap>
+                                <Chip label="Olympian" size="small" variant="outlined" />
+                                <Chip label="Judo" size="small" variant="outlined" />
+                                <Chip label="Peking 2008" size="small" variant="outlined" />
+                            </Stack>
+                        </Box>
+
+                        {/* Bio Text */}
+                        <Box sx={{ position: 'relative', width: '100%' }}>
+                            <FaQuoteLeft
+                                style={{
+                                    position: 'absolute',
+                                    top: -10,
+                                    left: 0,
+                                    opacity: 0.1,
+                                    fontSize: '2rem',
+                                    color: theme.palette.text.primary
+                                }}
+                            />
+                            <Typography 
+                                variant="body1" 
+                                color="text.secondary" 
+                                paragraph 
+                                sx={{ lineHeight: 1.8, position: 'relative', zIndex: 1 }}
+                            >
+                                Benny Behrla, ehemaliger Judoka. Zu seinen größten Erfolgen zählen zwei Bronzemedaillen bei den Europameisterschaften (2008 &amp; 2010) sowie die Teilnahme an den Olympischen Spielen 2008 in Peking. 2023 begann er mit dem Konzept &quot;Judo für Alle&quot;. Dort vermittelte er Kindern den Judosport und seine Werte auf spielerische und kindgerechte Weise. Das Pilotprojekt der TALENT KIDS FOUNDATION war geboren und es folgten weitere Sportarten mit deren Ambassadoren.
+                            </Typography>
+                        </Box>
+
+                    </Stack>
+                </DialogContent>
+            </Dialog>
         </Box>
     );
 };

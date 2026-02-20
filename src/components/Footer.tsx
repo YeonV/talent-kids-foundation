@@ -60,12 +60,12 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
             <Typography variant="h5" fontWeight={700} gutterBottom sx={{ color: '#fff' }}>
               Talent Kids <Box component="span" sx={{ color: theme.palette.primary.main }}>Foundation</Box>
             </Typography>
-            <Typography variant="body2" sx={{ color: 'grey.400', mb: 3, lineHeight: 1.6, maxWidth: 300 }}>
+            {/* <Typography variant="body2" sx={{ color: 'grey.400', mb: 3, lineHeight: 1.6, maxWidth: 300 }}>
               Wir bringen olympischen Sport in Schulen und Kitas. 
               Für mehr Bewegung, starke Werte und echte Chancengleichheit.
-            </Typography>
+            </Typography> */}
             
-            <Stack direction="row" spacing={1}>
+            <Stack direction="row" spacing={1} mt={3}>
               <IconButton sx={{ color: '#fff', bgcolor: 'rgba(255,255,255,0.05)', '&:hover': { bgcolor: theme.palette.primary.main } }}>
                 <FaInstagram size={20} />
               </IconButton>
@@ -80,7 +80,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
 
           {/* COL 2: QUICK LINKS */}
           <Grid size={{ xs: 6, sm: 4, md: 2 }}>
-            <Typography variant="subtitle2" fontWeight={700} gutterBottom sx={{ textTransform: 'uppercase', letterSpacing: 1, mb: 2 }}>
+            {/* <Typography variant="subtitle2" fontWeight={700} gutterBottom sx={{ textTransform: 'uppercase', letterSpacing: 1, mb: 2 }}>
               Menü
             </Typography>
             <Stack spacing={1.5}>
@@ -101,7 +101,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
                   {link.name}
                 </Link>
               ))}
-            </Stack>
+            </Stack> */}
           </Grid>
 
           {/* COL 3: LEGAL */}
@@ -197,7 +197,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
           </Box>
 
           {/* NEU: Animation Toggle */}
-          <FormControlLabel
+          {/* <FormControlLabel
             control={
               <Switch
                 checked={animationsEnabled} 
@@ -211,7 +211,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
                 Animationen {animationsEnabled ? 'An' : 'Aus'}
               </Typography>
             }
-          />
+          /> */}
           
         </Box>
 

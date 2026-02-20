@@ -46,7 +46,7 @@ const TeamSection = ({ ...props }) => {
                     <Typography variant="overline" color="primary" fontWeight={800} letterSpacing={1.2}>
                         DAS TEAM
                     </Typography>
-                    <Typography variant="h2" gutterBottom>
+                    <Typography variant="h2" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
                         Gesichter der <span style={{ color: theme.palette.primary.main }}>Foundation</span>.
                     </Typography>
                     <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
@@ -162,8 +162,17 @@ const TeamSection = ({ ...props }) => {
                     onClose={handleClose}
                     maxWidth="sm"
                     fullWidth
+                    sx={{
+                        '& .MuiDialog-paper': {
+                            width: { xs: '100%', sm: 'auto' },
+                            height: { xs: '100%', sm: 'auto' },
+                            maxHeight: { xs: '100%', sm: 'calc(100% - 64px)' },
+                            margin: { xs: 0, sm: 2 },
+                            borderRadius: { xs: 0, sm: 4 }
+                        }
+                    }}
                     PaperProps={{
-                        sx: { borderRadius: 4, p: 1 }
+                        sx: { p: 1 }
                     }}
                 >
                     {selectedMember && (
@@ -184,7 +193,7 @@ const TeamSection = ({ ...props }) => {
                                     />
 
                                     <Box textAlign="center">
-                                        <Typography variant="h4" gutterBottom>
+                                        <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '1.5rem', md: '2.125rem' } }}>
                                             {selectedMember.name}
                                         </Typography>
                                         <Typography variant="subtitle1" color="primary" fontWeight={700}>

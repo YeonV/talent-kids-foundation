@@ -61,10 +61,10 @@ const ProgramSection = () => {
             >
               UNSER KONZEPT
             </Typography>
-            <Typography variant="h2" sx={{ mt: 1, fontWeight: 800 }}>
+            <Typography variant="h2" sx={{ mt: 1, fontWeight: 800, fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
               Der <span style={{ color: theme.palette.primary.main }}>6-Wochen</span> Weg.
             </Typography>
-            <Typography variant="h5" color="text.secondary" sx={{ mt: 2, maxWidth: '90%' }}>
+            <Typography variant="h5" color="text.secondary" sx={{ mt: 2, maxWidth: '90%', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
               Vom ersten Purzelbaum bis zum ersten Gürtel. <br/>
               Wir machen den Einstieg in den Sport so einfach wie möglich.
             </Typography>

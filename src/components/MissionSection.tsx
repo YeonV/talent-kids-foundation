@@ -45,16 +45,16 @@ const MissionSection = ({...props}) => {
           >
             UNSERE MISSION
           </Typography>
-          <Typography variant="h2" gutterBottom sx={{ mb: 2 }}>
+          <Typography variant="h2" gutterBottom sx={{ mb: 2, fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
             Wir machen den ersten Schritt zusammen.
           </Typography>
-          <Typography variant="h5" color="text.secondary" sx={{ mb: 3, fontWeight: 500 }}>
+          <Typography variant="h5" color="text.secondary" sx={{ mb: 3, fontWeight: 500, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
             Mehr als nur Bewegung.
           </Typography>
-          <Typography variant="body1" color="text.secondary" fontSize="1.1rem" sx={{ mb: 2 }}>
+          <Typography variant="body1" color="text.secondary" fontSize={{ xs: '1rem', md: '1.1rem' }} sx={{ mb: 2 }}>
             Wir glauben, dass jedes Kind das Recht hat, sich zu bewegen, Neues zu probieren und seine Leidenschaft zu finden.
           </Typography>
-          <Typography variant="body1" color="text.secondary" fontSize="1.1rem">
+          <Typography variant="body1" color="text.secondary" fontSize={{ xs: '1rem', md: '1.1rem' }}>
             Die Talent Kids Foundation schließt die Lücke zwischen Schulsport und Vereinsleben. 
             Wir holen die Kinder dort ab, wo sie sind.
           </Typography>

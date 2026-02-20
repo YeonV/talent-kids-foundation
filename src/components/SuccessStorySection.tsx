@@ -33,42 +33,15 @@ const SuccessStorySection = () => {
                   mb: 2
                 }}
               >
-                EINE ERFOLGSGESCHICHTE
+                ANNA-MARIA WAGNER
               </Typography>
               
-              <Typography variant="h2" fontWeight={800} gutterBottom sx={{ mb: 3 }}>
-                Ein erster Griff – <br />
-                <Box component="span" sx={{ color: 'primary.main' }}>
-                  und alles verändert sich.
-                </Box>
+              <Typography variant="h2" fontWeight={800} gutterBottom sx={{ mb: 3, fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
+                Der erste Schritt zählt.
               </Typography>
 
-              <Box
-                sx={{
-                  mb: 4,
-                  pl: 3,
-                  borderLeft: `4px solid ${theme.palette.primary.main}`,
-                  py: 2
-                }}
-              >
-                <Typography variant="h4" fontWeight={700} gutterBottom sx={{ lineHeight: 1.4 }}>
-                  Anna-Maria Wagner.
-                </Typography>
-                <Typography variant="h5" color="text.secondary" sx={{ mb: 2, lineHeight: 1.6 }}>
-                  Eine Schul-AG. <br />
-                  Ein erstes Training im Judo. <br />
-                  Ein Moment, der alles verändert hat.
-                </Typography>
-              </Box>
-
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
-                Heute ist sie <strong>Weltmeisterin und Olympiamedaillengewinnerin</strong> –
-                doch angefangen hat es mit einem ganz normalen Schultag.
-              </Typography>
-
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                Mit einer Chance. <br />
-                Mit dem ersten Schritt.
+              <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: { xs: '1rem', md: '1.1rem' }, lineHeight: 1.8, mb: 3 }}>
+                Eine Judo-AG in der zweiten Klasse entfacht bei Anna-Maria Wagner die Leidenschaft zum Kampfsport. Begeistert von den Grundlagen, entwickelte sie früh großen sportlichen Ehrgeiz. Heute ist sie Doppelweltmeisterin, olympische Medaillengewinnerin und war sie Fahnenträgerin bei den Olympischen Spielen in Paris.
               </Typography>
 
               {/* <Box
@@ -98,7 +71,7 @@ const SuccessStorySection = () => {
                 borderRadius: 4,
                 overflow: 'hidden',
                 boxShadow: theme.shadows[10],
-                transform: 'rotate(2deg)',
+                transform: { xs: 'rotate(0deg)', md: 'rotate(2deg)' },
                 transition: 'transform 0.5s ease',
                 // '&:hover': {
                 //   transform: 'rotate(0deg) scale(1.02)'

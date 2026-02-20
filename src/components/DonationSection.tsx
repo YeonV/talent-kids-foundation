@@ -59,26 +59,24 @@ const DonationSection = ({ ...props }) => {
                             <Box display="flex" alignItems="center" gap={1} mb={2}>
                                 <FaHandHoldingHeart color={theme.palette.primary.main} size={20} />
                                 <Typography variant="overline" color="primary" fontWeight={800} letterSpacing={1}>
-                                    MITMACHEN
+                                    HILF BEIM ERSTEN SCHRITT MIT
                                 </Typography>
                             </Box>
 
-                            <Typography variant="h2" gutterBottom sx={{ fontWeight: 800 }}>
-                                Investiere in <br />
-                                <span style={{ color: theme.palette.primary.main }}>echte Zukunft.</span>
+                            <Typography variant="h2" gutterBottom sx={{ fontWeight: 800, fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
+                                Hilf beim <br />
+                                <span style={{ color: theme.palette.primary.main }}>ersten Schritt mit.</span>
                             </Typography>
 
-                            <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: '1.1rem', mb: 4 }}>
-                                Die Talent Kids Foundation finanziert sich zu 100% aus Spenden.
-                                Wir sorgen dafür, dass jeder Euro dort ankommt, wo er gebraucht wird:
-                                Auf der Matte, bei den Kindern.
+                            <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: { xs: '1rem', md: '1.1rem' }, mb: 4 }}>
+                                Die Talent Kids Foundation finanziert sich vollständig aus Spenden. Wir sorgen dafür, dass jeder Euro genau dort seine maximale Wirkung entfaltet, wo Sport beginnt: beim ersten Schritt der Kinder.
                             </Typography>
 
                             {/* USP Liste */}
                             <Stack spacing={2} sx={{ mb: 4 }}>
                                 {[
-                                    'Steuerlich absetzbar (Gemeinnützige gGmbH)',
-                                    'Direkte Förderung von sozial benachteiligten Kindern',
+                                    'Steuerlich absetzbar',
+                                    'Direkte Förderung von Sportprojekten',
                                     'Transparente Mittelverwendung'
                                 ].map((item, index) => (
                                     <Box key={index} display="flex" alignItems="center" gap={2}>
@@ -95,7 +93,7 @@ const DonationSection = ({ ...props }) => {
                         <Paper
                             elevation={theme.palette.mode === 'dark' ? 4 : 12}
                             sx={{
-                                p: 4,
+                                p: { xs: 2, md: 4 },
                                 borderRadius: 4,
                                 bgcolor: 'background.paper',
                                 border: `1px solid ${theme.palette.divider}`,
@@ -119,7 +117,7 @@ const DonationSection = ({ ...props }) => {
                                 <Typography variant="body2" color="text.secondary" gutterBottom>
                                     Ich möchte spenden:
                                 </Typography>
-                                <Typography variant="h2" color="primary" fontWeight={800} sx={{ my: 1 }}>
+                                <Typography variant="h2" color="primary" fontWeight={800} sx={{ my: 1, fontSize: { xs: '2.5rem', md: '3rem' } }}>
                                     {amount} €
                                 </Typography>
 
@@ -132,18 +130,18 @@ const DonationSection = ({ ...props }) => {
                                     sx={{ color: 'primary.main', height: 8 }}
                                 />
 
-                                <Box display="flex" justifyContent="center" gap={1} mt={2} flexWrap="wrap">
-                                    {impactLevels.slice(0, 3).map((level) => (
+                                {/* <Box display="flex" justifyContent="center" gap={1} mt={2} flexWrap="wrap">
+                                    {[10, 25, 50, 100, 150, 200].map((value) => (
                                         <Chip
-                                            key={level.value}
-                                            label={`${level.value}€`}
-                                            onClick={() => setAmount(level.value)}
-                                            variant={amount === level.value ? 'filled' : 'outlined'}
+                                            key={value}
+                                            label={`${value}€`}
+                                            onClick={() => setAmount(value)}
+                                            variant={amount === value ? 'filled' : 'outlined'}
                                             color="primary"
                                             clickable
                                         />
                                     ))}
-                                </Box>
+                                </Box> */}
                             </Box>
 
                             {/* The "Impact" Feedback */}
@@ -174,8 +172,8 @@ const DonationSection = ({ ...props }) => {
                                     fullWidth
                                     onClick={() => window.open('https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_ID', '_blank')}
                                     sx={{
-                                        py: 1.5,
-                                        fontSize: '1.1rem',
+                                        py: { xs: 1.75, md: 1.5 },
+                                        fontSize: { xs: '1rem', md: '1.1rem' },
                                         boxShadow: `0 8px 20px ${theme.palette.mode === 'dark' ? 'rgba(0,0,0,0.4)' : `rgba(${parseInt(theme.palette.primary.main.slice(1,3), 16)}, ${parseInt(theme.palette.primary.main.slice(3,5), 16)}, ${parseInt(theme.palette.primary.main.slice(5,7), 16)}, 0.4)`}`
                                     }}
                                 >

@@ -33,7 +33,7 @@ export default function Impressum() {
               <Box>
                 <Typography variant="h6" gutterBottom>Kontakt</Typography>
                 <Typography variant="body1">
-                  Telefon: +49 172 7512087<br />
+                  {/* Telefon: +49 172 7512087<br /> */}
                   E-Mail: info@talentkidsfoundation.com
                 </Typography>
               </Box>
@@ -44,6 +44,13 @@ export default function Impressum() {
                   Eintragung im Handelsregister.<br />
                   Registergericht: Amtsgericht Köln<br />
                   Registernummer: HRB [Nummer einfügen]
+                </Typography>
+              </Box>
+
+              <Box>
+                <Typography variant="h6" gutterBottom>Steuernummer</Typography>
+                <Typography variant="body1">
+                  Steuernummer / Aktenzeichen: 223/5918/2840 VBZ 64
                 </Typography>
               </Box>
               

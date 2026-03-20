@@ -28,7 +28,7 @@ const DonationSection = ({ ...props }) => {
     const [copied, setCopied] = useState(false);
 
     // Bankdaten (Platzhalter)
-    const iban = "DE12 3456 7890 1234 5678 90";
+    const iban = "Folgt...";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(iban);
@@ -167,17 +167,18 @@ const DonationSection = ({ ...props }) => {
                             {/* Action Buttons */}
                             <Stack spacing={2}>
                                 <Button
+                                    disabled
                                     variant="contained"
                                     size="large"
                                     fullWidth
-                                    onClick={() => window.open('https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_ID', '_blank')}
+                                    // onClick={() => window.open('https://www.paypal.com/donate/?hosted_button_id=talentkidsfoundation', '_blank')}
                                     sx={{
                                         py: { xs: 1.75, md: 1.5 },
                                         fontSize: { xs: '1rem', md: '1.1rem' },
                                         boxShadow: `0 8px 20px ${theme.palette.mode === 'dark' ? 'rgba(0,0,0,0.4)' : `rgba(${parseInt(theme.palette.primary.main.slice(1,3), 16)}, ${parseInt(theme.palette.primary.main.slice(3,5), 16)}, ${parseInt(theme.palette.primary.main.slice(5,7), 16)}, 0.4)`}`
                                     }}
                                 >
-                                    Jetzt Spenden (PayPal / Karte)
+                                    Jetzt Spenden (folgt...)
                                 </Button>
 
                                 {/* Bank Transfer Accordion / Simple View */}
@@ -191,7 +192,8 @@ const DonationSection = ({ ...props }) => {
                                     }}
                                 >
                                     <Typography variant="caption" display="block" color="text.secondary">
-                                        Oder per Überweisung an:
+                                        {/* Oder per Überweisung an: */}
+                                        per Überweisung an: 
                                     </Typography>
                                     <Box
                                         display="flex"

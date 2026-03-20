@@ -1,5 +1,29 @@
 [
   {
+    "id": "tibor-weissenborn",
+    "name": "Tibor Weißenborn",
+    "sport": "Hockey",
+    "images": [
+      "/img/ambassadors/tibor-weissenborn/1.jpg"
+    ],
+    "profession": "Geschäftsführer Finanzen bei einem Immobilien-Projektentwickler + Cheftrainer Rot-weiss",
+    "birthDate": "20.03.1981",
+    "birthPlace": "Berlin",
+    "city": "Köln",
+    "height": "1.75m",
+    "family": "Seit 2009 Frau Kerstin Hoyer (Hockeyspielerin), Mind. 1 Tochter (spielt Hockey), Schildkröte",
+    "hobbies": [
+      "Ski fahren"
+    ],
+    "achievements": [
+      "2008 Olympiasieger",
+      "2x Europameister",
+      "2x Weltmeister"
+    ],
+    "current": "Übernimmt beim KTHC Rot-Weiss in Köln das Team der 1. Damen",
+    "bio": "Tibor ist einer der erfolgreichste Hockeyspieler Deutschalands. Tibor Weißenborn ging in denselben Kindergarten wie Florian Keller. Als dessen Vater Carsten Keller eine Kindermannschaft aufbaute, war Tibor dabei. Er wurde mit der deutschen Nationalmannschaft je zweimal Welt- und Europameister und 2008 Olympiasieger."
+  },
+  {
     "id": "nils-politt",
     "name": "Nils Politt",
     "sport": "Radsport",

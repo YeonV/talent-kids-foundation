@@ -25,6 +25,7 @@ import { FaBars, FaTimes, FaHeart } from 'react-icons/fa';
 import ThemeSelector from '@/components/ThemeSelector';
 import { navItems } from '@/data/content';
 import DarkModeToggle from './DarkModeToggle';
+import Image from 'next/image';
 
 const Navbar = () => {
   const theme = useTheme();
@@ -125,13 +126,20 @@ const Navbar = () => {
               onClick={handleLogoClick}
               sx={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 1 }}
             >
+              <Image 
+                src="/talent-logo.png" 
+                alt="Talent Kids Foundation Logo" 
+                width={100}
+                height={52}
+                style={{ objectFit: 'contain' }} 
+              />
               <Box sx={{ lineHeight: 1 }}>
                 <Typography 
                   variant="h5" 
                   fontWeight={800} 
                   sx={{ 
                     color: (pathname === '/' && !scrolled) ? '#fff' : 'text.primary',
-                    letterSpacing: '-0.02em'
+                    letterSpacing: '-0.03em'
                   }}
                 >
                   TALENT KIDS
@@ -142,7 +150,8 @@ const Navbar = () => {
                      display: 'block', 
                      color: theme.palette.primary.main, 
                      fontWeight: 700, 
-                     letterSpacing: '0.2em' 
+                     letterSpacing: '0.3em',
+                     fontSize: '1rem',
                    }}
                 >
                   FOUNDATION

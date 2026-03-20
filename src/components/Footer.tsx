@@ -14,7 +14,7 @@ import {
   FormControlLabel,
   Switch
 } from '@mui/material';
-import { FaInstagram, FaLinkedin, FaFacebook, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook, FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub } from 'react-icons/fa';
 import { usePathname, useRouter } from 'next/navigation';
 import { legalLinks, navLinks } from '@/data/content';
 import { useThemeStore } from '@/store/useThemeStore';
@@ -65,7 +65,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
               Für mehr Bewegung, starke Werte und echte Chancengleichheit.
             </Typography> */}
             
-            <Stack direction="row" spacing={1} mt={3}>
+            {/* <Stack direction="row" spacing={1} mt={3}>
               <IconButton sx={{ color: '#fff', bgcolor: 'rgba(255,255,255,0.05)', '&:hover': { bgcolor: theme.palette.primary.main } }}>
                 <FaInstagram size={20} />
               </IconButton>
@@ -75,7 +75,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
               <IconButton sx={{ color: '#fff', bgcolor: 'rgba(255,255,255,0.05)', '&:hover': { bgcolor: theme.palette.primary.main } }}>
                 <FaFacebook size={20} />
               </IconButton>
-            </Stack>
+            </Stack> */}
           </Grid>
 
           {/* COL 2: QUICK LINKS */}
@@ -162,7 +162,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
               </Box>
 
               {/* Telefon */}
-              <Box display="flex" gap={2}>
+              {/* <Box display="flex" gap={2}>
                 <FaPhone size={18} color={theme.palette.primary.main} style={{ marginTop: 2 }} />
                 <Link 
                   href="tel:+491727512087" 
@@ -171,7 +171,7 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
                 >
                   +49 172 7512087
                 </Link>
-              </Box>
+              </Box> */}
 
             </Stack>
           </Grid>
@@ -187,31 +187,42 @@ const { animationsEnabled, toggleAnimations } = useThemeStore();
           alignItems="center"
           gap={2}
         >
-          <Box display="flex" flexDirection="row" alignItems={{ xs: 'center', md: 'flex-start' }} gap={0.5}>
-            <Typography variant="caption" color="grey.600" display="block">
-              © {new Date().getFullYear()} Talent Kids Foundation.
-            </Typography>
+          <Box display="flex" flexDirection="column" alignItems={{ xs: 'center', md: 'flex-start' }} gap={0.5}>
             <Typography variant="caption" color="grey.600">
-              Designed with ❤️ for Kids.
+              © {new Date().getFullYear()} Talent Kids Foundation. Designed with ❤️ for Kids.
             </Typography>
           </Box>
 
-          {/* NEU: Animation Toggle */}
-          {/* <FormControlLabel
-            control={
-              <Switch
-                checked={animationsEnabled} 
-                onChange={toggleAnimations} 
-                size="small" 
-                color="primary"
-              />
-            }
-            label={
-              <Typography variant="caption" color="grey.600">
-                Animationen {animationsEnabled ? 'An' : 'Aus'}
-              </Typography>
-            }
-          /> */}
+          <Link 
+            href="https://github.com/YeonV/talent-kids-foundation" 
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="none"
+            sx={{ 
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1,
+              px: 2,
+              py: 0.75,
+              borderRadius: 2,
+              bgcolor: 'rgba(255,255,255,0.05)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              color: 'grey.400',
+              fontSize: '0.8rem',
+              fontWeight: 500,
+              transition: 'all 0.3s ease',
+              '&:hover': { 
+                bgcolor: 'rgba(255,255,255,0.08)',
+                borderColor: theme.palette.primary.main,
+                color: theme.palette.primary.main,
+                transform: 'translateY(-2px)',
+                boxShadow: `0 4px 12px ${alpha(theme.palette.primary.main, 0.2)}`
+              }
+            }}
+          >
+            <FaGithub size={16} />
+            <span>Open Source</span>
+          </Link>
           
         </Box>
 

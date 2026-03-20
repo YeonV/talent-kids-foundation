@@ -13,7 +13,7 @@ export default function Datenschutz() {
               Datenschutzerklärung
             </Typography>
             <Typography variant="body1" paragraph mt={4}>
-              [Hier muss der Datenschutz-Text vom Generator (z.B. e-recht24.de) eingefügt werden.]
+              [folgt...]
             </Typography>
             <Typography variant="body1">
               Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst...

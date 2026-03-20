@@ -268,7 +268,7 @@ const AmbassadorDialog = ({ ambassador, open, onClose }: AmbassadorDialogProps) 
                 size="small"
                 sx={{ 
                   bgcolor: 'primary.main',
-                  color: 'primary.contrastText',
+                  color: '#fff', 
                   fontWeight: 700,
                   mb: 1.5,
                   fontSize: { xs: '0.75rem', sm: '0.8125rem' }
